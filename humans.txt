@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Adam Bognar -- Design -- @bognarly
+    Andrew Simpson -- Copywriting -- @
+    Sonja Farrell -- Development -- @yourpalsonja
+    The Still Brandworks -- @stillbrandworks
+
+# THANKS
+
+    
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    HTML5BP

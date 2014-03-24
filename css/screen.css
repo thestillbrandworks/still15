@@ -1,0 +1,685 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 44, ../scss/_default.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 48, ../scss/_default.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 56, ../scss/_default.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 68, ../scss/_default.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 73, ../scss/_default.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 82, ../scss/_default.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 95, ../scss/_default.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 103, ../scss/_default.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 113, ../scss/_default.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 123, ../scss/_default.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 11, ../scss/screen.scss */
+h2, h3, h4, h5 {
+  font-weight: 200;
+}
+
+/* line 13, ../scss/screen.scss */
+h1 {
+  display: block;
+  float: left;
+  clear: both;
+  padding-left: 3.90625%;
+  margin-top: 45px;
+  margin-bottom: 145px;
+  text-indent: -9999px;
+}
+/* line 22, ../scss/screen.scss */
+h1 a {
+  display: block;
+  height: 22px;
+  width: 145px;
+  background: url("../img/word-mark.png") no-repeat;
+}
+
+/* line 30, ../scss/screen.scss */
+h2 {
+  margin-top: 0;
+  font-family: "freight-display-pro", serif;
+  font-size: 2.125em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+/* line 37, ../scss/screen.scss */
+.motto h2 {
+  margin-bottom: 145px;
+  color: #fff;
+}
+/* line 42, ../scss/screen.scss */
+.brag h2 {
+  margin-bottom: 45px;
+  color: #fff;
+}
+/* line 47, ../scss/screen.scss */
+.demo-reel h2 {
+  margin-bottom: 40px;
+  color: #191919;
+}
+/* line 52, ../scss/screen.scss */
+.what-we-do h2 {
+  margin-bottom: 244px;
+}
+@media only screen and (min-width: 700px) {
+  /* line 52, ../scss/screen.scss */
+  .what-we-do h2 {
+    float: right;
+    width: 56.25%;
+  }
+}
+/* line 61, ../scss/screen.scss */
+.our-process h2 {
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 700px) {
+  /* line 61, ../scss/screen.scss */
+  .our-process h2 {
+    margin-right: 17.1875%;
+    margin-left: 17.1875%;
+  }
+}
+
+/* line 73, ../scss/screen.scss */
+h3 {
+  margin-top: 0;
+}
+
+/* line 74, ../scss/screen.scss */
+.validation h3 {
+  margin-bottom: 50px;
+}
+
+/* line 79, ../scss/screen.scss */
+h4 {
+  color: #fff;
+  font-family: "freight-display-pro", serif;
+  font-size: 1.875em;
+}
+/* line 84, ../scss/screen.scss */
+h4 .underline {
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+/* line 92, ../scss/screen.scss */
+#validation h4 {
+  margin-top: 0;
+  margin-bottom: 156px;
+}
+
+/* Global */
+/* line 106, ../scss/screen.scss */
+.slide, header, .brag, .demo-reel, .what-we-do, .our-process {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+
+/* line 113, ../scss/screen.scss */
+.slide-contents {
+  overflow: hidden;
+  max-width: 1280px;
+  padding: 60px 3.90625%;
+  margin: 0 auto;
+}
+/* line 119, ../scss/screen.scss */
+.slide-contents p {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.666666667;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 128, ../scss/screen.scss */
+  .slide-contents {
+    padding: 0;
+  }
+
+  /* line 130, ../scss/screen.scss */
+  .slide-contents p {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 138, ../scss/screen.scss */
+  .slide-contents p {
+    padding-right: 30.078125%;
+    padding-left: 30.078125%;
+  }
+}
+/* line 144, ../scss/screen.scss */
+.caption {
+  margin-bottom: 30px;
+  color: #e8e8e8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
+  width: 100%;
+}
+
+/* line 153, ../scss/screen.scss */
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px 13px;
+  border: 2px solid #fff;
+  margin-bottom: 100px;
+  color: #fff;
+  font-family: "freight-text-pro", serif;
+  text-decoration: none;
+}
+
+/* line 173, ../scss/screen.scss */
+.hero-bg {
+  background-image: url("../img/mclaren-tech-centre.jpg");
+}
+
+/* line 178, ../scss/screen.scss */
+.motto {
+  float: left;
+}
+
+/* line 182, ../scss/screen.scss */
+.logo {
+  margin-bottom: 45px;
+}
+
+/* line 186, ../scss/screen.scss */
+header .caption {
+  float: left;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 192, ../scss/screen.scss */
+  .motto {
+    width: 65.625%;
+    margin: 0 20.703125%;
+  }
+}
+/* line 201, ../scss/screen.scss */
+.brag {
+  color: #a33e1d;
+  text-align: center;
+  background-color: #ff6633;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 210, ../scss/screen.scss */
+  .slide-contents {
+    margin-top: 165px;
+    margin-bottom: 90px;
+  }
+
+  /* line 215, ../scss/screen.scss */
+  .brag p {
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+}
+/* line 227, ../scss/screen.scss */
+.client-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 232, ../scss/screen.scss */
+.client-list li {
+  margin: 20px 0;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 238, ../scss/screen.scss */
+  .client-list li {
+    display: inline;
+    margin: 0 0 0 150px;
+  }
+
+  /* line 243, ../scss/screen.scss */
+  .client-list li:first-child {
+    margin-left: 0;
+  }
+}
+/* line 250, ../scss/screen.scss */
+.demo-reel {
+  background-color: #fff;
+  text-align: center;
+}
+/* line 255, ../scss/screen.scss */
+.demo-reel p {
+  color: #a3a3a3;
+}
+@media only screen and (min-width: 700px) {
+  /* line 258, ../scss/screen.scss */
+  .demo-reel .slide-contents {
+    margin-top: 225px;
+    margin-bottom: 225px;
+  }
+}
+
+/* line 265, ../scss/screen.scss */
+.play-button {
+  display: block;
+  margin-bottom: 60px;
+}
+
+/* line 274, ../scss/screen.scss */
+.what-we-do {
+  color: #fff;
+  text-align: right;
+}
+@media only screen and (min-width: 700px) {
+  /* line 280, ../scss/screen.scss */
+  .what-we-do .slide-contents {
+    margin-top: 135px;
+    margin-right: 13.671875%;
+  }
+}
+/* line 286, ../scss/screen.scss */
+.what-we-do p {
+  float: right;
+  clear: both;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 225px;
+  max-width: 390px;
+}
+/* line 295, ../scss/screen.scss */
+.what-we-do .caption {
+  float: right;
+}
+
+/* line 299, ../scss/screen.scss */
+.solve-challenges-bg {
+  background-image: url("../img/what-we-do-bg.png");
+}
+
+/* line 311, ../scss/screen.scss */
+.our-process {
+  color: #000;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  /* line 317, ../scss/screen.scss */
+  .our-process .slide-contents {
+    margin-top: 240px;
+    margin-bottom: 135px;
+  }
+}
+
+/* line 325, ../scss/screen.scss */
+.process-outline {
+  padding: 0;
+  margin-bottom: 60px;
+  color: #ccc;
+  list-style: none;
+  text-align: center;
+}
+/* line 332, ../scss/screen.scss */
+.process-outline li {
+  width: 40%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ccc;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 600px) {
+  /* line 332, ../scss/screen.scss */
+  .process-outline li {
+    width: auto;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 0;
+    border-left: 1px solid #ccc;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 332, ../scss/screen.scss */
+  .process-outline li {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* line 332, ../scss/screen.scss */
+  .process-outline li {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+/* line 358, ../scss/screen.scss */
+.process-outline li:first-child {
+  border: none;
+}
+
+/* line 368, ../scss/screen.scss */
+.challenge, #validation, #valuation {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+/* line 375, ../scss/screen.scss */
+.challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents {
+  overflow: hidden;
+  max-width: 1280px;
+  padding: 60px 3.90625%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 700px) {
+  /* line 375, ../scss/screen.scss */
+  .challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents {
+    padding: 0;
+  }
+}
+/* line 386, ../scss/screen.scss */
+.challenge p, #validation p, #valuation p {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.666666667;
+}
+/* line 392, ../scss/screen.scss */
+.challenge a, #validation a, #valuation a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 401, ../scss/screen.scss */
+  .challenge-contents p {
+    padding-right: 33.59375%;
+    padding-left: 33.59375%;
+  }
+}
+/* line 408, ../scss/screen.scss */
+#validation {
+  color: #c4ffee;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  /* line 408, ../scss/screen.scss */
+  #validation {
+    padding-top: 140px;
+    padding-bottom: 330px;
+  }
+}
+
+/* line 418, ../scss/screen.scss */
+.validation-bg {
+  background-image: url("../img/validation.png");
+}
+
+/* line 424, ../scss/screen.scss */
+#valuation {
+  color: #c1e7ff;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  /* line 424, ../scss/screen.scss */
+  #valuation {
+    padding-top: 140px;
+    padding-bottom: 330px;
+  }
+}
+
+/* line 434, ../scss/screen.scss */
+.valuation-bg {
+  background-image: url("../img/valuation.png");
+}
+
+/* line 440, ../scss/screen.scss */
+.traction-bg {
+  background-image: url("../img/traction.png");
+}
+
+/* line 445, ../scss/screen.scss */
+.scaling {
+  background-image: url("../img/scaling.png");
+}
+
+/* line 454, ../scss/screen.scss */
+.tactic {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+  color: #191919;
+  line-height: 1.875;
+  background-color: #fff;
+}
+@media only screen and (min-width: 600px) {
+  /* line 454, ../scss/screen.scss */
+  .tactic {
+    float: left;
+    width: 100%;
+    padding: 105px 5.59375%;
+    color: #191919;
+    line-height: 1.875;
+    background-color: #fff;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 454, ../scss/screen.scss */
+  .tactic {
+    float: left;
+    width: 100%;
+    padding: 105px 13.59375%;
+    color: #191919;
+    line-height: 1.875;
+    background-color: #fff;
+  }
+}
+/* line 480, ../scss/screen.scss */
+.tactic a {
+  text-decoration: underline;
+}
+
+/* line 482, ../scss/screen.scss */
+.tactic-description {
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* line 483, ../scss/screen.scss */
+.client-link {
+  display: block;
+  margin: 30px auto 0;
+  width: 75%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 487, ../scss/screen.scss */
+  .tactic-description {
+    width: 58.3870968%;
+    float: left;
+  }
+
+  /* line 491, ../scss/screen.scss */
+  .client-link {
+    width: 19.3548387%;
+    margin-top: 0;
+    float: right;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 499, ../scss/screen.scss */
+  .tactic-description {
+    width: 48.3870968%;
+  }
+
+  /* line 500, ../scss/screen.scss */
+  .client-link {
+    width: 19.3548387%;
+    margin-top: 0;
+  }
+}
+/* line 507, ../scss/screen.scss */
+footer {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+  line-height: 1.875;
+}
+@media only screen and (min-width: 700px) {
+  /* line 507, ../scss/screen.scss */
+  footer {
+    padding: 115px  13.671875%;
+  }
+}
+/* line 518, ../scss/screen.scss */
+footer .cta-button {
+  margin-top: 15px;
+  border-color: #000;
+  color: #000;
+}
+
+/* line 525, ../scss/screen.scss */
+.mission-statement {
+  width: 75%;
+  margin: 0 auto;
+  color: #666;
+}
+@media only screen and (min-width: 700px) {
+  /* line 525, ../scss/screen.scss */
+  .mission-statement {
+    float: left;
+    width: 48.3870968%;
+    margin: 0;
+  }
+}
+
+/* line 538, ../scss/screen.scss */
+.still-address {
+  width: 75%;
+  padding: 0;
+  margin: 0 auto;
+  font-size: .875em;
+  list-style: none;
+}
+@media only screen and (min-width: 700px) {
+  /* line 538, ../scss/screen.scss */
+  .still-address {
+    float: right;
+    width: 48.3870968%;
+    margin: 0;
+    margin-top: 15px;
+    text-align: right;
+  }
+}
+/* line 553, ../scss/screen.scss */
+.still-address .street-adress {
+  text-decoration: underline;
+}
+/* line 555, ../scss/screen.scss */
+.still-address p {
+  margin: 0;
+}
+/* line 556, ../scss/screen.scss */
+.still-address a {
+  color: inherit;
+}
+
+/* Parallax Stuff */
+/* line 562, ../scss/screen.scss */
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 567, ../scss/screen.scss */
+.parallax-bg, .hero-bg, .solve-challenges-bg, .validation-bg, .valuation-bg, .traction-bg, .scaling {
+  height: 150%;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
