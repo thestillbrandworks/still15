@@ -256,35 +256,35 @@ h4 .underline {
   text-decoration: none;
 }
 
-/* line 173, ../scss/screen.scss */
-.hero-bg {
+/* line 169, ../scss/screen.scss */
+header {
   background-image: url("../img/mclaren-tech-centre.jpg");
-  top: 126px;
+  background-size: 150%;
 }
 
-/* line 179, ../scss/screen.scss */
+/* line 176, ../scss/screen.scss */
 .motto {
   float: left;
 }
 
-/* line 183, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 .logo {
   margin-bottom: 45px;
 }
 
-/* line 187, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 header .caption {
   float: left;
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 193, ../scss/screen.scss */
+  /* line 190, ../scss/screen.scss */
   .motto {
     width: 65.625%;
     margin: 0 20.703125%;
   }
 }
-/* line 202, ../scss/screen.scss */
+/* line 199, ../scss/screen.scss */
 .brag {
   color: #a33e1d;
   text-align: center;
@@ -292,41 +292,47 @@ header .caption {
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 211, ../scss/screen.scss */
+  /* line 208, ../scss/screen.scss */
   .slide-contents {
     margin-top: 165px;
     margin-bottom: 90px;
   }
 
-  /* line 216, ../scss/screen.scss */
+  /* line 213, ../scss/screen.scss */
   .brag p {
     margin-top: 0;
     margin-bottom: 70px;
   }
 }
-/* line 228, ../scss/screen.scss */
+/* line 225, ../scss/screen.scss */
 .client-list {
   padding: 0;
   list-style: none;
 }
 
-/* line 233, ../scss/screen.scss */
+/* line 230, ../scss/screen.scss */
 .client-list li {
-  margin: 20px 0;
+  margin: 40px 0;
 }
-
 @media only screen and (min-width: 700px) {
-  /* line 239, ../scss/screen.scss */
+  /* line 230, ../scss/screen.scss */
   .client-list li {
     display: inline;
-    margin: 0 0 0 150px;
-  }
-
-  /* line 244, ../scss/screen.scss */
-  .client-list li:first-child {
-    margin-left: 0;
+    margin: 0 0 0 80px;
   }
 }
+@media only screen and (min-width: 900px) {
+  /* line 230, ../scss/screen.scss */
+  .client-list li {
+    margin: 0 0 0 100px;
+  }
+}
+
+/* line 244, ../scss/screen.scss */
+.client-list li:first-child {
+  margin-left: 0;
+}
+
 /* line 251, ../scss/screen.scss */
 .demo-reel {
   background-color: #fff;
@@ -355,19 +361,24 @@ header .caption {
 /* line 269, ../scss/screen.scss */
 .play-button {
   display: block;
-  opacity: 0;
   margin-bottom: 60px;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -moz-transition-duration: 2s;
-  -o-transition-duration: 2s;
-  -webkit-transition-duration: 2s;
-  transition-duration: 2s;
+}
+@media only screen and (min-width: 700px) {
+  /* line 269, ../scss/screen.scss */
+  .play-button {
+    opacity: 0;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+  }
 }
 
-/* line 277, ../scss/screen.scss */
+/* line 282, ../scss/screen.scss */
 .player {
   display: none;
   position: absolute;
@@ -376,19 +387,21 @@ header .caption {
   width: 100%;
 }
 
-/* line 287, ../scss/screen.scss */
+/* line 292, ../scss/screen.scss */
 .what-we-do {
   color: #fff;
   text-align: right;
+  background-image: url("../img/what-we-do-bg.png");
+  background-size: 120%;
 }
 @media only screen and (min-width: 700px) {
-  /* line 293, ../scss/screen.scss */
+  /* line 301, ../scss/screen.scss */
   .what-we-do .slide-contents {
     margin-top: 135px;
     margin-right: 13.671875%;
   }
 }
-/* line 299, ../scss/screen.scss */
+/* line 307, ../scss/screen.scss */
 .what-we-do p {
   float: right;
   clear: both;
@@ -397,30 +410,25 @@ header .caption {
   margin-bottom: 225px;
   max-width: 390px;
 }
-/* line 308, ../scss/screen.scss */
+/* line 316, ../scss/screen.scss */
 .what-we-do .caption {
   float: right;
 }
 
-/* line 312, ../scss/screen.scss */
-.solve-challenges-bg {
-  background-image: url("../img/what-we-do-bg.png");
-}
-
-/* line 324, ../scss/screen.scss */
+/* line 329, ../scss/screen.scss */
 .our-process {
   color: #000;
   text-align: center;
 }
 @media only screen and (min-width: 700px) {
-  /* line 330, ../scss/screen.scss */
+  /* line 335, ../scss/screen.scss */
   .our-process .slide-contents {
     margin-top: 240px;
     margin-bottom: 135px;
   }
 }
 
-/* line 338, ../scss/screen.scss */
+/* line 343, ../scss/screen.scss */
 .process-outline {
   padding: 0;
   margin-bottom: 60px;
@@ -428,7 +436,7 @@ header .caption {
   list-style: none;
   text-align: center;
 }
-/* line 345, ../scss/screen.scss */
+/* line 350, ../scss/screen.scss */
 .process-outline li {
   width: 40%;
   padding-top: 20px;
@@ -437,7 +445,7 @@ header .caption {
   margin: 0 auto;
 }
 @media only screen and (min-width: 600px) {
-  /* line 345, ../scss/screen.scss */
+  /* line 350, ../scss/screen.scss */
   .process-outline li {
     width: auto;
     display: inline;
@@ -448,32 +456,32 @@ header .caption {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 345, ../scss/screen.scss */
+  /* line 350, ../scss/screen.scss */
   .process-outline li {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 345, ../scss/screen.scss */
+  /* line 350, ../scss/screen.scss */
   .process-outline li {
     padding-left: 60px;
     padding-right: 60px;
   }
 }
-/* line 371, ../scss/screen.scss */
+/* line 376, ../scss/screen.scss */
 .process-outline li:first-child {
   border: none;
 }
 
-/* line 381, ../scss/screen.scss */
+/* line 386, ../scss/screen.scss */
 .challenge, #validation, #valuation {
   position: relative;
   overflow: hidden;
   float: left;
   width: 100%;
 }
-/* line 388, ../scss/screen.scss */
+/* line 393, ../scss/screen.scss */
 .challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents {
   overflow: hidden;
   max-width: 1280px;
@@ -481,77 +489,61 @@ header .caption {
   margin: 0 auto;
 }
 @media only screen and (min-width: 700px) {
-  /* line 388, ../scss/screen.scss */
+  /* line 393, ../scss/screen.scss */
   .challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents {
     padding: 0;
   }
 }
-/* line 399, ../scss/screen.scss */
+/* line 404, ../scss/screen.scss */
 .challenge p, #validation p, #valuation p {
   margin: 0;
   font-size: 1.125em;
   line-height: 1.666666667;
 }
-/* line 405, ../scss/screen.scss */
+/* line 410, ../scss/screen.scss */
 .challenge a, #validation a, #valuation a {
   color: inherit;
   text-decoration: underline;
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 414, ../scss/screen.scss */
+  /* line 419, ../scss/screen.scss */
   .challenge-contents p {
     padding-right: 33.59375%;
     padding-left: 33.59375%;
   }
 }
-/* line 421, ../scss/screen.scss */
+/* line 428, ../scss/screen.scss */
 #validation {
   color: #c4ffee;
   text-align: center;
+  background-image: url("../img/validation.png");
 }
 @media only screen and (min-width: 700px) {
-  /* line 421, ../scss/screen.scss */
+  /* line 428, ../scss/screen.scss */
   #validation {
     padding-top: 140px;
     padding-bottom: 330px;
+    background-size: 140%;
   }
 }
 
-/* line 431, ../scss/screen.scss */
-.validation-bg {
-  background-image: url("../img/validation.png");
-}
-
-/* line 437, ../scss/screen.scss */
+/* line 441, ../scss/screen.scss */
 #valuation {
   color: #c1e7ff;
   text-align: center;
+  background-image: url("../img/valuation.png");
 }
 @media only screen and (min-width: 700px) {
-  /* line 437, ../scss/screen.scss */
+  /* line 441, ../scss/screen.scss */
   #valuation {
     padding-top: 140px;
     padding-bottom: 330px;
+    background-size: 140%;
   }
 }
 
-/* line 447, ../scss/screen.scss */
-.valuation-bg {
-  background-image: url("../img/valuation.png");
-}
-
-/* line 453, ../scss/screen.scss */
-.traction-bg {
-  background-image: url("../img/traction.png");
-}
-
-/* line 458, ../scss/screen.scss */
-.scaling {
-  background-image: url("../img/scaling.png");
-}
-
-/* line 467, ../scss/screen.scss */
+/* line 459, ../scss/screen.scss */
 .tactic {
   float: left;
   width: 100%;
@@ -561,7 +553,7 @@ header .caption {
   background-color: #fff;
 }
 @media only screen and (min-width: 600px) {
-  /* line 467, ../scss/screen.scss */
+  /* line 459, ../scss/screen.scss */
   .tactic {
     float: left;
     width: 100%;
@@ -572,7 +564,7 @@ header .caption {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 467, ../scss/screen.scss */
+  /* line 459, ../scss/screen.scss */
   .tactic {
     float: left;
     width: 100%;
@@ -582,18 +574,18 @@ header .caption {
     background-color: #fff;
   }
 }
-/* line 493, ../scss/screen.scss */
+/* line 485, ../scss/screen.scss */
 .tactic a {
   text-decoration: underline;
 }
 
-/* line 495, ../scss/screen.scss */
+/* line 487, ../scss/screen.scss */
 .tactic-description {
   margin: 0 auto;
   width: 75%;
 }
 
-/* line 496, ../scss/screen.scss */
+/* line 488, ../scss/screen.scss */
 .client-link {
   display: block;
   margin: 30px auto 0;
@@ -601,13 +593,13 @@ header .caption {
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 500, ../scss/screen.scss */
+  /* line 492, ../scss/screen.scss */
   .tactic-description {
     width: 58.3870968%;
     float: left;
   }
 
-  /* line 504, ../scss/screen.scss */
+  /* line 496, ../scss/screen.scss */
   .client-link {
     width: 19.3548387%;
     margin-top: 0;
@@ -615,18 +607,18 @@ header .caption {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 512, ../scss/screen.scss */
+  /* line 504, ../scss/screen.scss */
   .tactic-description {
     width: 48.3870968%;
   }
 
-  /* line 513, ../scss/screen.scss */
+  /* line 505, ../scss/screen.scss */
   .client-link {
     width: 19.3548387%;
     margin-top: 0;
   }
 }
-/* line 520, ../scss/screen.scss */
+/* line 512, ../scss/screen.scss */
 footer {
   float: left;
   width: 100%;
@@ -634,26 +626,26 @@ footer {
   line-height: 1.875;
 }
 @media only screen and (min-width: 700px) {
-  /* line 520, ../scss/screen.scss */
+  /* line 512, ../scss/screen.scss */
   footer {
     padding: 115px  13.671875%;
   }
 }
-/* line 531, ../scss/screen.scss */
+/* line 523, ../scss/screen.scss */
 footer .cta-button {
   margin-top: 15px;
   border-color: #000;
   color: #000;
 }
 
-/* line 538, ../scss/screen.scss */
+/* line 530, ../scss/screen.scss */
 .mission-statement {
   width: 75%;
   margin: 0 auto;
   color: #666;
 }
 @media only screen and (min-width: 700px) {
-  /* line 538, ../scss/screen.scss */
+  /* line 530, ../scss/screen.scss */
   .mission-statement {
     float: left;
     width: 48.3870968%;
@@ -661,7 +653,7 @@ footer .cta-button {
   }
 }
 
-/* line 551, ../scss/screen.scss */
+/* line 543, ../scss/screen.scss */
 .still-address {
   width: 75%;
   padding: 0;
@@ -670,7 +662,7 @@ footer .cta-button {
   list-style: none;
 }
 @media only screen and (min-width: 700px) {
-  /* line 551, ../scss/screen.scss */
+  /* line 543, ../scss/screen.scss */
   .still-address {
     float: right;
     width: 48.3870968%;
@@ -679,34 +671,15 @@ footer .cta-button {
     text-align: right;
   }
 }
-/* line 566, ../scss/screen.scss */
+/* line 558, ../scss/screen.scss */
 .still-address .street-adress {
   text-decoration: underline;
 }
-/* line 568, ../scss/screen.scss */
+/* line 560, ../scss/screen.scss */
 .still-address p {
   margin: 0;
 }
-/* line 569, ../scss/screen.scss */
+/* line 561, ../scss/screen.scss */
 .still-address a {
   color: inherit;
-}
-
-/* Parallax Stuff */
-/* line 575, ../scss/screen.scss */
-.parallax {
-  position: relative;
-  overflow: hidden;
-}
-
-/* line 580, ../scss/screen.scss */
-.parallax-bg, .hero-bg, .solve-challenges-bg, .validation-bg, .valuation-bg, .traction-bg, .scaling {
-  height: 150%;
-  width: 100%;
-  background-size: cover;
-  background-position: top center;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
 }

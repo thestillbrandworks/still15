@@ -1,4 +1,23 @@
 // only start parallaxin' a background if you can see it
+// function slideInView(){
+//   
+//   var $slide = $('.parallax'),
+//       scrollPosition = $(window).scrollTop(),
+//       windowHeight = $(window).height();
+//       
+//   $slide.each(function( index ) {
+//     var slideId = $(this).attr('id');
+//     
+//     if (windowHeight + scrollPosition >= $('#'+ slideId).offset().top) {
+//       var parallaxFactor = $('#'+ slideId).offset().top - (scrollPosition + windowHeight);
+//       
+//       
+//       $('.' + slideId +'-bg').css('top', -(parallaxFactor*0.1)+'px')
+//     }
+//   });
+// }
+
+// only start parallaxin' a background if you can see it
 function slideInView(){
   
   var $slide = $('.parallax'),
@@ -11,8 +30,7 @@ function slideInView(){
     if (windowHeight + scrollPosition >= $('#'+ slideId).offset().top) {
       var parallaxFactor = $('#'+ slideId).offset().top - (scrollPosition + windowHeight);
       
-      
-      $('.' + slideId +'-bg').css('top', (parallaxFactor*0.1)+'px')
+      $('#' + slideId).css('background-position', 'center '+((parallaxFactor*0.1))+'px')
     }
   });
 }
@@ -33,6 +51,8 @@ function playerInView(){
 function reelHeight(){
   if (!$('.demo-reel .slide-contents').hasClass('reel-playing')) {    
       $('.demo-reel').css('height', $('.demo-reel').height());
+      $('.demo-reel').css('height', 'auto');
+      
   } else {
     $('.demo-reel').css('height', $('.player').height());
 
@@ -93,20 +113,3 @@ $(window).resize(function(){
   reelHeight();
 })
 
-
-
-// 
-// function highlightFade() {
-//  
-//  if ($(document).scrollTop() > (($(window).height()) - 750 )) {
-//    var constantThing = ($(document).scrollTop() - $('#homepage-events').offset().top)/-630;
-//    $('#highlights').css('opacity', constantThing);
-//    
-//    console.log("constantThing: ", constantThing);
-//    
-//  };
-//  
-//  if ($(document).scrollTop() < (($(window).height()) - 750 )){
-//    $('#highlights').css('opacity', 1);
-//  }
-// }

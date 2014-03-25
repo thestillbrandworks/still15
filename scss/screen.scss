@@ -168,13 +168,10 @@ and (min-width : 1100px) {
 /////////////////
 header {
   @extend .slide;
+  background-image: url('../img/mclaren-tech-centre.jpg'); 
+  background-size: 150%;
 }
 
-.hero-bg { 
-  @extend .parallax-bg;
-  background-image: url('../img/mclaren-tech-centre.jpg'); 
-  top: 126px;
-}
 
 .motto { 
   float: left; 
@@ -231,18 +228,21 @@ and (min-width : 700px) {
 }
 
   .client-list li {
-    margin: 20px 0;
-  }
-
-  @media only screen and (min-width : 700px) {
-
-  .client-list li {
-    display: inline;
-    margin: 0 0 0 150px;
+    margin: 40px 0;
+    
+    
+    @media only screen and (min-width : 700px) {
+      display: inline;
+      margin: 0 0 0 80px;
+    }
+    
+    @media only screen and (min-width : 900px) {
+      margin: 0 0 0 100px;
+    }
   }
 
   .client-list li:first-child { margin-left: 0;}   
-}
+
 
   
 
@@ -268,10 +268,15 @@ and (min-width : 700px) {
   
   .play-button {
     display: block;
-    opacity: 0;
     margin-bottom: 60px;
-    @include transition-property(opacity);
-    @include transition-duration(2s);
+    
+    @media only screen and (min-width : 700px) {
+          opacity: 0;
+          @include transition-property(opacity);
+      @include transition-duration(2s);
+    }
+    
+
   }
   
   .player {
@@ -288,6 +293,9 @@ and (min-width : 700px) {
   @extend .slide;
   color: #fff;
   text-align: right;
+  background-image: url('../img/what-we-do-bg.png');
+  background-size: 120%;
+
     
   @media only screen and (min-width : 700px) {
     .slide-contents {
@@ -309,10 +317,7 @@ and (min-width : 700px) {
     float: right;
   }
  }   
-    .solve-challenges-bg {
-      @extend .parallax-bg;
-      background-image: url('../img/what-we-do-bg.png');
-    }
+
  
 
 
@@ -417,48 +422,35 @@ and (min-width : 700px) {
   }
 }
 
+//#validation {
 
+//}
 #validation {
   @extend .challenge;
   color: #c4ffee;
   text-align: center;
+  background-image: url("../img/validation.png");
   
   @media only screen and (min-width : 700px) {  
     padding-top: 140px;
     padding-bottom: 330px;
+    background-size: 140%;
   }
 }
-  .validation-bg {
-    @extend .parallax-bg;
-    background-image: url('../img/validation.png');
-  }
     
-
   #valuation {
     @extend .challenge;
     color: #c1e7ff;
     text-align: center;
+    background-image: url('../img/valuation.png');
     
     @media only screen and (min-width : 700px) {  
       padding-top: 140px;
       padding-bottom: 330px;
+      background-size: 140%;
     }
   }
-      .valuation-bg {
-        @extend .parallax-bg;
-        background-image: url('../img/valuation.png');
-      }
-    
 
-    .traction-bg {
-      @extend .parallax-bg;
-      background-image: url('../img/traction.png');
-    }
-
-    .scaling {
-       @extend .parallax-bg;
-       background-image: url('../img/scaling.png');
-    }
 
 
 
@@ -571,19 +563,3 @@ footer {
 
 
 
-/* Parallax Stuff */
-.parallax {
-  position: relative;
-  overflow: hidden;
-}
-
-  .parallax-bg {
-    height: 150%;
-    width: 100%;
-    background-size: cover;
-    background-position: top center;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-  }
