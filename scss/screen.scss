@@ -173,6 +173,7 @@ header {
 .hero-bg { 
   @extend .parallax-bg;
   background-image: url('../img/mclaren-tech-centre.jpg'); 
+  top: 126px;
 }
 
 .motto { 
@@ -251,23 +252,35 @@ and (min-width : 700px) {
   @extend .slide;
   background-color: #fff;
   text-align: center;
+  @include transition-property(height);
+  @include transition-duration(0.5s);
   
   p { color: #a3a3a3; }
   
-  @media only screen and (min-width : 700px) {
-    .slide-contents {
-      margin-top: 225px;
-      margin-bottom: 225px;
-    }
+  .slide-contents {
+    
+      @media only screen and (min-width : 700px) {
+        margin-top: 225px;
+        margin-bottom: 225px;
+      }
   }
 } 
   
   .play-button {
     display: block;
+    opacity: 0;
     margin-bottom: 60px;
+    @include transition-property(opacity);
+    @include transition-duration(2s);
   }
   
-  
+  .player {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
 // What We Do
 /////////////////

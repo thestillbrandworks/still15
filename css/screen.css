@@ -259,31 +259,32 @@ h4 .underline {
 /* line 173, ../scss/screen.scss */
 .hero-bg {
   background-image: url("../img/mclaren-tech-centre.jpg");
+  top: 126px;
 }
 
-/* line 178, ../scss/screen.scss */
+/* line 179, ../scss/screen.scss */
 .motto {
   float: left;
 }
 
-/* line 182, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 .logo {
   margin-bottom: 45px;
 }
 
-/* line 186, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 header .caption {
   float: left;
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 192, ../scss/screen.scss */
+  /* line 193, ../scss/screen.scss */
   .motto {
     width: 65.625%;
     margin: 0 20.703125%;
   }
 }
-/* line 201, ../scss/screen.scss */
+/* line 202, ../scss/screen.scss */
 .brag {
   color: #a33e1d;
   text-align: center;
@@ -291,77 +292,103 @@ header .caption {
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 210, ../scss/screen.scss */
+  /* line 211, ../scss/screen.scss */
   .slide-contents {
     margin-top: 165px;
     margin-bottom: 90px;
   }
 
-  /* line 215, ../scss/screen.scss */
+  /* line 216, ../scss/screen.scss */
   .brag p {
     margin-top: 0;
     margin-bottom: 70px;
   }
 }
-/* line 227, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 .client-list {
   padding: 0;
   list-style: none;
 }
 
-/* line 232, ../scss/screen.scss */
+/* line 233, ../scss/screen.scss */
 .client-list li {
   margin: 20px 0;
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 238, ../scss/screen.scss */
+  /* line 239, ../scss/screen.scss */
   .client-list li {
     display: inline;
     margin: 0 0 0 150px;
   }
 
-  /* line 243, ../scss/screen.scss */
+  /* line 244, ../scss/screen.scss */
   .client-list li:first-child {
     margin-left: 0;
   }
 }
-/* line 250, ../scss/screen.scss */
+/* line 251, ../scss/screen.scss */
 .demo-reel {
   background-color: #fff;
   text-align: center;
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  -webkit-transition-property: height;
+  transition-property: height;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 255, ../scss/screen.scss */
+/* line 258, ../scss/screen.scss */
 .demo-reel p {
   color: #a3a3a3;
 }
 @media only screen and (min-width: 700px) {
-  /* line 258, ../scss/screen.scss */
+  /* line 260, ../scss/screen.scss */
   .demo-reel .slide-contents {
     margin-top: 225px;
     margin-bottom: 225px;
   }
 }
 
-/* line 265, ../scss/screen.scss */
+/* line 269, ../scss/screen.scss */
 .play-button {
   display: block;
+  opacity: 0;
   margin-bottom: 60px;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
 }
 
-/* line 274, ../scss/screen.scss */
+/* line 277, ../scss/screen.scss */
+.player {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 287, ../scss/screen.scss */
 .what-we-do {
   color: #fff;
   text-align: right;
 }
 @media only screen and (min-width: 700px) {
-  /* line 280, ../scss/screen.scss */
+  /* line 293, ../scss/screen.scss */
   .what-we-do .slide-contents {
     margin-top: 135px;
     margin-right: 13.671875%;
   }
 }
-/* line 286, ../scss/screen.scss */
+/* line 299, ../scss/screen.scss */
 .what-we-do p {
   float: right;
   clear: both;
@@ -370,30 +397,30 @@ header .caption {
   margin-bottom: 225px;
   max-width: 390px;
 }
-/* line 295, ../scss/screen.scss */
+/* line 308, ../scss/screen.scss */
 .what-we-do .caption {
   float: right;
 }
 
-/* line 299, ../scss/screen.scss */
+/* line 312, ../scss/screen.scss */
 .solve-challenges-bg {
   background-image: url("../img/what-we-do-bg.png");
 }
 
-/* line 311, ../scss/screen.scss */
+/* line 324, ../scss/screen.scss */
 .our-process {
   color: #000;
   text-align: center;
 }
 @media only screen and (min-width: 700px) {
-  /* line 317, ../scss/screen.scss */
+  /* line 330, ../scss/screen.scss */
   .our-process .slide-contents {
     margin-top: 240px;
     margin-bottom: 135px;
   }
 }
 
-/* line 325, ../scss/screen.scss */
+/* line 338, ../scss/screen.scss */
 .process-outline {
   padding: 0;
   margin-bottom: 60px;
@@ -401,7 +428,7 @@ header .caption {
   list-style: none;
   text-align: center;
 }
-/* line 332, ../scss/screen.scss */
+/* line 345, ../scss/screen.scss */
 .process-outline li {
   width: 40%;
   padding-top: 20px;
@@ -410,7 +437,7 @@ header .caption {
   margin: 0 auto;
 }
 @media only screen and (min-width: 600px) {
-  /* line 332, ../scss/screen.scss */
+  /* line 345, ../scss/screen.scss */
   .process-outline li {
     width: auto;
     display: inline;
@@ -421,32 +448,32 @@ header .caption {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 332, ../scss/screen.scss */
+  /* line 345, ../scss/screen.scss */
   .process-outline li {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 332, ../scss/screen.scss */
+  /* line 345, ../scss/screen.scss */
   .process-outline li {
     padding-left: 60px;
     padding-right: 60px;
   }
 }
-/* line 358, ../scss/screen.scss */
+/* line 371, ../scss/screen.scss */
 .process-outline li:first-child {
   border: none;
 }
 
-/* line 368, ../scss/screen.scss */
+/* line 381, ../scss/screen.scss */
 .challenge, #validation, #valuation {
   position: relative;
   overflow: hidden;
   float: left;
   width: 100%;
 }
-/* line 375, ../scss/screen.scss */
+/* line 388, ../scss/screen.scss */
 .challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents {
   overflow: hidden;
   max-width: 1280px;
@@ -454,77 +481,77 @@ header .caption {
   margin: 0 auto;
 }
 @media only screen and (min-width: 700px) {
-  /* line 375, ../scss/screen.scss */
+  /* line 388, ../scss/screen.scss */
   .challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents {
     padding: 0;
   }
 }
-/* line 386, ../scss/screen.scss */
+/* line 399, ../scss/screen.scss */
 .challenge p, #validation p, #valuation p {
   margin: 0;
   font-size: 1.125em;
   line-height: 1.666666667;
 }
-/* line 392, ../scss/screen.scss */
+/* line 405, ../scss/screen.scss */
 .challenge a, #validation a, #valuation a {
   color: inherit;
   text-decoration: underline;
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 401, ../scss/screen.scss */
+  /* line 414, ../scss/screen.scss */
   .challenge-contents p {
     padding-right: 33.59375%;
     padding-left: 33.59375%;
   }
 }
-/* line 408, ../scss/screen.scss */
+/* line 421, ../scss/screen.scss */
 #validation {
   color: #c4ffee;
   text-align: center;
 }
 @media only screen and (min-width: 700px) {
-  /* line 408, ../scss/screen.scss */
+  /* line 421, ../scss/screen.scss */
   #validation {
     padding-top: 140px;
     padding-bottom: 330px;
   }
 }
 
-/* line 418, ../scss/screen.scss */
+/* line 431, ../scss/screen.scss */
 .validation-bg {
   background-image: url("../img/validation.png");
 }
 
-/* line 424, ../scss/screen.scss */
+/* line 437, ../scss/screen.scss */
 #valuation {
   color: #c1e7ff;
   text-align: center;
 }
 @media only screen and (min-width: 700px) {
-  /* line 424, ../scss/screen.scss */
+  /* line 437, ../scss/screen.scss */
   #valuation {
     padding-top: 140px;
     padding-bottom: 330px;
   }
 }
 
-/* line 434, ../scss/screen.scss */
+/* line 447, ../scss/screen.scss */
 .valuation-bg {
   background-image: url("../img/valuation.png");
 }
 
-/* line 440, ../scss/screen.scss */
+/* line 453, ../scss/screen.scss */
 .traction-bg {
   background-image: url("../img/traction.png");
 }
 
-/* line 445, ../scss/screen.scss */
+/* line 458, ../scss/screen.scss */
 .scaling {
   background-image: url("../img/scaling.png");
 }
 
-/* line 454, ../scss/screen.scss */
+/* line 467, ../scss/screen.scss */
 .tactic {
   float: left;
   width: 100%;
@@ -534,7 +561,7 @@ header .caption {
   background-color: #fff;
 }
 @media only screen and (min-width: 600px) {
-  /* line 454, ../scss/screen.scss */
+  /* line 467, ../scss/screen.scss */
   .tactic {
     float: left;
     width: 100%;
@@ -545,7 +572,7 @@ header .caption {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 454, ../scss/screen.scss */
+  /* line 467, ../scss/screen.scss */
   .tactic {
     float: left;
     width: 100%;
@@ -555,18 +582,18 @@ header .caption {
     background-color: #fff;
   }
 }
-/* line 480, ../scss/screen.scss */
+/* line 493, ../scss/screen.scss */
 .tactic a {
   text-decoration: underline;
 }
 
-/* line 482, ../scss/screen.scss */
+/* line 495, ../scss/screen.scss */
 .tactic-description {
   margin: 0 auto;
   width: 75%;
 }
 
-/* line 483, ../scss/screen.scss */
+/* line 496, ../scss/screen.scss */
 .client-link {
   display: block;
   margin: 30px auto 0;
@@ -574,13 +601,13 @@ header .caption {
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 487, ../scss/screen.scss */
+  /* line 500, ../scss/screen.scss */
   .tactic-description {
     width: 58.3870968%;
     float: left;
   }
 
-  /* line 491, ../scss/screen.scss */
+  /* line 504, ../scss/screen.scss */
   .client-link {
     width: 19.3548387%;
     margin-top: 0;
@@ -588,18 +615,18 @@ header .caption {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 499, ../scss/screen.scss */
+  /* line 512, ../scss/screen.scss */
   .tactic-description {
     width: 48.3870968%;
   }
 
-  /* line 500, ../scss/screen.scss */
+  /* line 513, ../scss/screen.scss */
   .client-link {
     width: 19.3548387%;
     margin-top: 0;
   }
 }
-/* line 507, ../scss/screen.scss */
+/* line 520, ../scss/screen.scss */
 footer {
   float: left;
   width: 100%;
@@ -607,26 +634,26 @@ footer {
   line-height: 1.875;
 }
 @media only screen and (min-width: 700px) {
-  /* line 507, ../scss/screen.scss */
+  /* line 520, ../scss/screen.scss */
   footer {
     padding: 115px  13.671875%;
   }
 }
-/* line 518, ../scss/screen.scss */
+/* line 531, ../scss/screen.scss */
 footer .cta-button {
   margin-top: 15px;
   border-color: #000;
   color: #000;
 }
 
-/* line 525, ../scss/screen.scss */
+/* line 538, ../scss/screen.scss */
 .mission-statement {
   width: 75%;
   margin: 0 auto;
   color: #666;
 }
 @media only screen and (min-width: 700px) {
-  /* line 525, ../scss/screen.scss */
+  /* line 538, ../scss/screen.scss */
   .mission-statement {
     float: left;
     width: 48.3870968%;
@@ -634,7 +661,7 @@ footer .cta-button {
   }
 }
 
-/* line 538, ../scss/screen.scss */
+/* line 551, ../scss/screen.scss */
 .still-address {
   width: 75%;
   padding: 0;
@@ -643,7 +670,7 @@ footer .cta-button {
   list-style: none;
 }
 @media only screen and (min-width: 700px) {
-  /* line 538, ../scss/screen.scss */
+  /* line 551, ../scss/screen.scss */
   .still-address {
     float: right;
     width: 48.3870968%;
@@ -652,27 +679,27 @@ footer .cta-button {
     text-align: right;
   }
 }
-/* line 553, ../scss/screen.scss */
+/* line 566, ../scss/screen.scss */
 .still-address .street-adress {
   text-decoration: underline;
 }
-/* line 555, ../scss/screen.scss */
+/* line 568, ../scss/screen.scss */
 .still-address p {
   margin: 0;
 }
-/* line 556, ../scss/screen.scss */
+/* line 569, ../scss/screen.scss */
 .still-address a {
   color: inherit;
 }
 
 /* Parallax Stuff */
-/* line 562, ../scss/screen.scss */
+/* line 575, ../scss/screen.scss */
 .parallax {
   position: relative;
   overflow: hidden;
 }
 
-/* line 567, ../scss/screen.scss */
+/* line 580, ../scss/screen.scss */
 .parallax-bg, .hero-bg, .solve-challenges-bg, .validation-bg, .valuation-bg, .traction-bg, .scaling {
   height: 150%;
   width: 100%;
