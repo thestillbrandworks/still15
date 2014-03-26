@@ -93,6 +93,12 @@ h4 {
       margin-top: 0;
       margin-bottom: 156px;
     }
+    
+    #innovation & {
+      color: #000;
+      
+      .underline { background-color: #000; }
+    }
 }    
 
     
@@ -422,9 +428,7 @@ and (min-width : 700px) {
   }
 }
 
-//#validation {
 
-//}
 #validation {
   @extend .challenge;
   color: #c4ffee;
@@ -438,21 +442,60 @@ and (min-width : 700px) {
   }
 }
     
-  #valuation {
-    @extend .challenge;
-    color: #c1e7ff;
-    text-align: center;
-    background-image: url('../img/valuation.png');
-    
-    @media only screen and (min-width : 700px) {  
-      padding-top: 140px;
-      padding-bottom: 330px;
-      background-size: 140%;
-    }
+#valuation {
+  @extend .challenge;
+  color: #c1e7ff;
+  text-align: center;
+  background-image: url('../img/valuation.png');
+  
+  @media only screen and (min-width : 700px) {  
+    padding-top: 140px;
+    padding-bottom: 330px;
+    background-size: 140%;
   }
+}
 
 
+#traction {
+  @extend .challenge;
+  color: #fff;
+  text-align: center;
+  background-image: url('../img/traction.png');
+  
+  @media only screen and (min-width : 700px) {  
+    padding-top: 140px;
+    padding-bottom: 330px;
+    background-size: 140%;
+  }
+}
 
+
+#scaling {
+  @extend .challenge;
+  color: #fff;
+  text-align: center;
+  background-image: url('../img/scaling.png');
+  
+  @media only screen and (min-width : 700px) {  
+    padding-top: 140px;
+    padding-bottom: 330px;
+    background-size: 140%;
+  }
+}
+
+
+#innovation {
+  @extend .challenge;
+  color: #000;
+  text-align: center;
+  background-image: url('../img/innovation.png');
+  
+  @media only screen and (min-width : 700px) {  
+    padding-top: 140px;
+    padding-bottom: 330px;
+    background-size: 140%;
+  }
+}
 
 
 
@@ -514,7 +557,7 @@ footer {
   width: 100%;
   padding: 60px 0;
   line-height: 1.875;
-  
+  background-color: #222;
   
   @media only screen and (min-width : 700px) {
     padding: 115px  13.671875%;
@@ -522,15 +565,13 @@ footer {
   
   .cta-button {
     margin-top: 15px;
-    border-color: #000;
-    color: #000;
   }
 }
 
   .mission-statement {
     width: 75%;
     margin: 0 auto;
-    color: #666;
+    color: #ccc;
     
     @media only screen and (min-width : 700px) {
       float: left;
@@ -544,6 +585,7 @@ footer {
     width: 75%;
     padding: 0;
     margin: 0 auto;
+    color: #fff;
     font-size: .875em;
     list-style: none;
     
