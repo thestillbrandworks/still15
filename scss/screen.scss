@@ -8,7 +8,7 @@
 
 // Typography
 
-h2, h3, h4, h5 { font-weight: 200; }
+*, h3, h4, h5 { font-weight: 200; }
 
 h1 {
     display: block;
@@ -16,9 +16,10 @@ h1 {
     clear: both;
     padding-left: 3.90625%;
     margin-top: 45px;
-    margin-bottom: 145px;
     text-indent: -9999px;
-    
+    @media only screen and (min-width : 700px){ margin-bottom: 145px; }
+    @media only screen and (max-width : 700px){ margin-bottom: 115px; }
+	
     a {
       display: block;
       height: 22px;
@@ -30,9 +31,11 @@ h1 {
 h2 { 
     margin-top: 0;
     font-family: "freight-display-pro", serif;
-    font-size: 2.125em; 
     font-weight: 300;
     letter-spacing: 1px;
+	@media only screen and (min-width : 700px){ font-size: 2.125em;  }
+	@media only screen and (max-width : 700px){ font-size: 2.125em; }
+	
     
     .motto & { 
       margin-bottom: 145px;
@@ -50,7 +53,6 @@ h2 {
     }
     
     .what-we-do & {
-        margin-bottom: 244px;
         
         @media only screen and (min-width : 700px){
           float: right;
@@ -160,13 +162,25 @@ and (min-width : 1100px) {
   display: inline-block;
   padding: 15px 30px 13px;
   border: 2px solid #fff;
-  margin-bottom: 100px;
+  
   color: #fff;
   font-family: "freight-text-pro", serif;
   text-decoration: none;
+  
+  @media only screen and (max-width : 700px) { margin-bottom: 60px; }
+  @media only screen and (min-width : 700px) { margin-bottom: 90px; }
 }
 
-
+.parallax {
+    @media only screen and (min-width : 700px) { 
+  		  background-size: 150%;
+	}
+    @media only screen and (max-width : 700px) { 
+    	 background-size: cover;
+    	 height: 100%;
+		 background-position: left bottom !important;
+    }
+}
 
 
 
@@ -193,12 +207,21 @@ header .caption {
 
 @media only screen 
 and (min-width : 700px) {
-  .motto {
-    width: 65.625%;
-    margin: 0 20.703125%;
+  .motto.slide-contents {
+    width: 71.296%;
+  	margin: 0 9% 0 20.703125%;
   }
 }  
 
+@media only screen 
+and (max-width : 700px) {
+  .motto {
+	padding-top: 0;
+  	padding-bottom: 0;
+	}
+  .motto img { display: none; }
+  .motto h2 { margin-bottom: 120px; }
+}
 
 // Brag
 /////////////////
@@ -300,16 +323,21 @@ and (min-width : 700px) {
   color: #fff;
   text-align: right;
   background-image: url('../img/what-we-do-bg.png');
-  background-size: 120%;
 
     
   @media only screen and (min-width : 700px) {
-    .slide-contents {
+    .azimuth {
       margin-top: 135px;
       margin-right: 13.671875%;
     }
   }
-  
+
+  @media only screen and (max-width : 700px) { 
+      .slide-contents {
+        padding-bottom: 0px;
+      }
+   }
+     
   p {
       float: right;
       clear: both;
@@ -349,7 +377,7 @@ and (min-width : 700px) {
 .process-outline {
   padding: 0;
   margin-bottom: 60px;
-  color: #ccc;
+  color: #aaa;
   list-style: none;
   text-align: center;
   
@@ -431,14 +459,14 @@ and (min-width : 700px) {
 
 #validation {
   @extend .challenge;
-  color: #c4ffee;
+  color: #fff;
   text-align: center;
   background-image: url("../img/validation.png");
   
   @media only screen and (min-width : 700px) {  
+	color: #c4ffee;
     padding-top: 140px;
     padding-bottom: 330px;
-    background-size: 140%;
   }
 }
     
@@ -451,7 +479,6 @@ and (min-width : 700px) {
   @media only screen and (min-width : 700px) {  
     padding-top: 140px;
     padding-bottom: 330px;
-    background-size: 140%;
   }
 }
 
@@ -479,7 +506,6 @@ and (min-width : 700px) {
   @media only screen and (min-width : 700px) {  
     padding-top: 140px;
     padding-bottom: 330px;
-    background-size: 140%;
   }
 }
 
@@ -493,7 +519,6 @@ and (min-width : 700px) {
   @media only screen and (min-width : 700px) {  
     padding-top: 140px;
     padding-bottom: 330px;
-    background-size: 140%;
   }
 }
 
