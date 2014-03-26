@@ -50,7 +50,7 @@ h2 {
     }
     
     .what-we-do & {
-        margin-bottom: 244px;
+    //    margin-bottom: 244px;
         
         @media only screen and (min-width : 700px){
           float: right;
@@ -172,11 +172,13 @@ header {
 
 .hero-bg { 
   @extend .parallax-bg;
-  background-image: url('../img/mclaren-tech-centre.jpg'); 
+  background-image: url('../img/thestill-mclarentechcentre.jpg'); 
 }
 
-.motto { 
-  float: left; 
+.motto.slide-contents { 
+  float: left;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .logo { 
@@ -190,11 +192,16 @@ header .caption {
 @media only screen 
 and (min-width : 700px) {
   .motto {
-    width: 65.625%;
-    margin: 0 20.703125%;
+    width: 71.296%;
+	margin: 0 9% 0 20.703125%;
   }
 }  
 
+@media only screen 
+and (max-width : 700px) {
+  .motto img { display: none; }
+  .motto h2 { margin-bottom: 60px; }
+}
 
 // Brag
 /////////////////
@@ -282,14 +289,21 @@ and (min-width : 700px) {
       margin-right: 13.671875%;
     }
   }
+  @media only screen and (max-width : 700px) { 
+      .slide-contents {
+        padding-bottom: 0px;
+      }
+   }
+  
   
   p {
       float: right;
       clear: both;
       padding: 0;
       margin: 0;
-      margin-bottom: 225px;
       max-width: 390px;
+	  @media only screen and (min-width : 700px) { margin-bottom: 225px; }
+	  @media only screen and (max-width : 700px) { margin-bottom: 60px; }
   }
 
   .caption {
@@ -565,7 +579,7 @@ footer {
 }
 
   .parallax-bg {
-    height: 150%;
+    height: 125%;
     width: 100%;
     background-size: cover;
     background-position: top center;
@@ -573,4 +587,5 @@ footer {
     z-index: -1;
     top: 0;
     left: 0;
+	@media only screen and (max-width : 700px) { height: 100%; }
   }

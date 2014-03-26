@@ -43,7 +43,8 @@ function playerInView(){
 $(document).scroll(function(){
   
   
-  
-  slideInView();
-
+	if ($(window).width() > 700){
+	    slideInView();
+	}
+ 
 });
