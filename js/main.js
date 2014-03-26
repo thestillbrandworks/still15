@@ -97,13 +97,6 @@ $(document).ready(function(){
   
 
   
-<<<<<<< HEAD
-	if ($(window).width() > 700){
-	    slideInView();
-	}
- 
-});
-=======
   
 })
 
@@ -120,4 +113,3 @@ $(window).resize(function(){
   reelHeight();
 })
 
->>>>>>> 022a2015110ecdc99fd1b3dd6736058b7e2c2c0c
