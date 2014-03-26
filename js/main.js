@@ -85,29 +85,24 @@ function videoInteraction(){
 
 
 $(document).ready(function(){
-
-      
+ 
       
   $(".player").fitVids();
-  
-  
-  
+ 
   reelHeight();
   videoInteraction();
-  
-
   
   
 })
 
-
-$(document).scroll(function(){
-  
-  playerInView();
-  slideInView();
-
-});
-
+	
+ $(document).scroll(function(){
+	 if ($(window).width() > 700) {
+	 playerInView();
+	 slideInView();
+ 	}
+ });
+ 
 
 $(window).resize(function(){
   reelHeight();
