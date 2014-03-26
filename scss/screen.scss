@@ -168,6 +168,7 @@ and (min-width : 1100px) {
 /////////////////
 header {
   @extend .slide;
+
 }
 
 .hero-bg { 
@@ -237,18 +238,21 @@ and (max-width : 700px) {
 }
 
   .client-list li {
-    margin: 20px 0;
-  }
-
-  @media only screen and (min-width : 700px) {
-
-  .client-list li {
-    display: inline;
-    margin: 0 0 0 150px;
+    margin: 40px 0;
+    
+    
+    @media only screen and (min-width : 700px) {
+      display: inline;
+      margin: 0 0 0 80px;
+    }
+    
+    @media only screen and (min-width : 900px) {
+      margin: 0 0 0 100px;
+    }
   }
 
   .client-list li:first-child { margin-left: 0;}   
-}
+
 
   
 
@@ -258,23 +262,40 @@ and (max-width : 700px) {
   @extend .slide;
   background-color: #fff;
   text-align: center;
+  @include transition-property(height);
+  @include transition-duration(0.5s);
   
   p { color: #a3a3a3; }
   
-  @media only screen and (min-width : 700px) {
-    .slide-contents {
-      margin-top: 225px;
-      margin-bottom: 225px;
-    }
+  .slide-contents {
+    
+      @media only screen and (min-width : 700px) {
+        margin-top: 225px;
+        margin-bottom: 225px;
+      }
   }
 } 
   
   .play-button {
     display: block;
     margin-bottom: 60px;
+    
+    @media only screen and (min-width : 700px) {
+          opacity: 0;
+          @include transition-property(opacity);
+      @include transition-duration(2s);
+    }
+    
+
   }
   
-  
+  .player {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
 // What We Do
 /////////////////
@@ -282,6 +303,9 @@ and (max-width : 700px) {
   @extend .slide;
   color: #fff;
   text-align: right;
+  background-image: url('../img/what-we-do-bg.png');
+  background-size: 120%;
+
     
   @media only screen and (min-width : 700px) {
     .slide-contents {
@@ -310,10 +334,7 @@ and (max-width : 700px) {
     float: right;
   }
  }   
-    .solve-challenges-bg {
-      @extend .parallax-bg;
-      background-image: url('../img/what-we-do-bg.png');
-    }
+
  
 
 
@@ -418,48 +439,35 @@ and (max-width : 700px) {
   }
 }
 
+//#validation {
 
+//}
 #validation {
   @extend .challenge;
   color: #c4ffee;
   text-align: center;
+  background-image: url("../img/validation.png");
   
   @media only screen and (min-width : 700px) {  
     padding-top: 140px;
     padding-bottom: 330px;
+    background-size: 140%;
   }
 }
-  .validation-bg {
-    @extend .parallax-bg;
-    background-image: url('../img/validation.png');
-  }
     
-
   #valuation {
     @extend .challenge;
     color: #c1e7ff;
     text-align: center;
+    background-image: url('../img/valuation.png');
     
     @media only screen and (min-width : 700px) {  
       padding-top: 140px;
       padding-bottom: 330px;
+      background-size: 140%;
     }
   }
-      .valuation-bg {
-        @extend .parallax-bg;
-        background-image: url('../img/valuation.png');
-      }
-    
 
-    .traction-bg {
-      @extend .parallax-bg;
-      background-image: url('../img/traction.png');
-    }
-
-    .scaling {
-       @extend .parallax-bg;
-       background-image: url('../img/scaling.png');
-    }
 
 
 
@@ -572,6 +580,7 @@ footer {
 
 
 
+
 /* Parallax Stuff */
 .parallax {
   position: relative;
@@ -589,3 +598,4 @@ footer {
     left: 0;
 	@media only screen and (max-width : 700px) { height: 100%; }
   }
+
