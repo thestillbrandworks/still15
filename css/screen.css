@@ -551,22 +551,18 @@ header .caption {
 .what-we-do {
   color: #fff;
   text-align: right;
-  background-image: url("../img/what-we-do-bg.png");
-}
-@media only screen and (min-width: 700px) {
-  /* line 393, ../scss/screen.scss */
-  .what-we-do .azimuth {
-    margin-top: 135px;
-    margin-right: 13.671875%;
-  }
 }
 @media only screen and (max-width: 700px) {
-  /* line 400, ../scss/screen.scss */
+  /* line 399, ../scss/screen.scss */
   .what-we-do .slide-contents {
     padding-bottom: 0px;
   }
 }
-/* line 405, ../scss/screen.scss */
+/* line 404, ../scss/screen.scss */
+.what-we-do .solve-challenges-bg {
+  background-image: url("../img/what-we-do-bg.png");
+}
+/* line 409, ../scss/screen.scss */
 .what-we-do p {
   float: right;
   clear: both;
@@ -575,25 +571,25 @@ header .caption {
   margin-bottom: 225px;
   max-width: 390px;
 }
-/* line 414, ../scss/screen.scss */
+/* line 418, ../scss/screen.scss */
 .what-we-do .caption {
   float: right;
 }
 
-/* line 427, ../scss/screen.scss */
+/* line 431, ../scss/screen.scss */
 .our-process {
   color: #000;
   text-align: center;
 }
 @media only screen and (min-width: 700px) {
-  /* line 433, ../scss/screen.scss */
+  /* line 437, ../scss/screen.scss */
   .our-process .slide-contents {
     margin-top: 240px;
     margin-bottom: 135px;
   }
 }
 
-/* line 441, ../scss/screen.scss */
+/* line 445, ../scss/screen.scss */
 .process-outline {
   padding: 0;
   margin-bottom: 60px;
@@ -601,7 +597,7 @@ header .caption {
   list-style: none;
   text-align: center;
 }
-/* line 448, ../scss/screen.scss */
+/* line 452, ../scss/screen.scss */
 .process-outline li {
   width: 40%;
   padding-top: 20px;
@@ -610,7 +606,7 @@ header .caption {
   margin: 0 auto;
 }
 @media only screen and (min-width: 600px) {
-  /* line 448, ../scss/screen.scss */
+  /* line 452, ../scss/screen.scss */
   .process-outline li {
     width: auto;
     display: inline;
@@ -621,32 +617,32 @@ header .caption {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 448, ../scss/screen.scss */
+  /* line 452, ../scss/screen.scss */
   .process-outline li {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 448, ../scss/screen.scss */
+  /* line 452, ../scss/screen.scss */
   .process-outline li {
     padding-left: 60px;
     padding-right: 60px;
   }
 }
-/* line 474, ../scss/screen.scss */
+/* line 478, ../scss/screen.scss */
 .process-outline li:first-child {
   border: none;
 }
 
-/* line 484, ../scss/screen.scss */
+/* line 488, ../scss/screen.scss */
 .challenge, #validation, #valuation, #traction, #scaling, #innovation {
   position: relative;
   overflow: hidden;
   float: left;
   width: 100%;
 }
-/* line 491, ../scss/screen.scss */
+/* line 495, ../scss/screen.scss */
 .challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents, #traction .challenge-contents, #scaling .challenge-contents, #innovation .challenge-contents {
   overflow: hidden;
   max-width: 1280px;
@@ -654,38 +650,37 @@ header .caption {
   margin: 0 auto;
 }
 @media only screen and (min-width: 700px) {
-  /* line 491, ../scss/screen.scss */
+  /* line 495, ../scss/screen.scss */
   .challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents, #traction .challenge-contents, #scaling .challenge-contents, #innovation .challenge-contents {
     padding: 0;
   }
 }
-/* line 502, ../scss/screen.scss */
+/* line 506, ../scss/screen.scss */
 .challenge p, #validation p, #valuation p, #traction p, #scaling p, #innovation p {
   margin: 0;
   font-size: 1.125em;
   line-height: 1.666666667;
 }
-/* line 508, ../scss/screen.scss */
+/* line 512, ../scss/screen.scss */
 .challenge a, #validation a, #valuation a, #traction a, #scaling a, #innovation a {
   color: inherit;
   text-decoration: underline;
 }
 
 @media only screen and (min-width: 700px) {
-  /* line 517, ../scss/screen.scss */
+  /* line 521, ../scss/screen.scss */
   .challenge-contents p {
     padding-right: 33.59375%;
     padding-left: 33.59375%;
   }
 }
-/* line 524, ../scss/screen.scss */
+/* line 528, ../scss/screen.scss */
 #validation {
   color: #fff;
   text-align: center;
-  background-image: url("../img/validation.png");
 }
 @media only screen and (min-width: 700px) {
-  /* line 524, ../scss/screen.scss */
+  /* line 528, ../scss/screen.scss */
   #validation {
     color: #c4ffee;
     padding-top: 140px;
@@ -693,63 +688,84 @@ header .caption {
   }
 }
 
-/* line 537, ../scss/screen.scss */
+/* line 540, ../scss/screen.scss */
+.validation-bg {
+  background-image: url("../img/validation.png");
+}
+
+/* line 545, ../scss/screen.scss */
 #valuation {
   color: #c1e7ff;
   text-align: center;
-  background-image: url("../img/valuation.png");
 }
 @media only screen and (min-width: 700px) {
-  /* line 537, ../scss/screen.scss */
+  /* line 545, ../scss/screen.scss */
   #valuation {
     padding-top: 171px;
     padding-bottom: 360px;
   }
 }
 
-/* line 550, ../scss/screen.scss */
+/* line 556, ../scss/screen.scss */
+.valuation-bg {
+  background-image: url("../img/valuation.png");
+}
+
+/* line 562, ../scss/screen.scss */
 #traction {
   color: #fff;
   text-align: center;
-  background-image: url("../img/traction.png");
 }
 @media only screen and (min-width: 700px) {
-  /* line 550, ../scss/screen.scss */
+  /* line 562, ../scss/screen.scss */
   #traction {
     padding-top: 135px;
     padding-bottom: 240px;
   }
 }
 
-/* line 563, ../scss/screen.scss */
+/* line 572, ../scss/screen.scss */
+.traction-bg {
+  background-image: url("../img/traction.png");
+}
+
+/* line 578, ../scss/screen.scss */
 #scaling {
   color: #fff;
   text-align: center;
-  background-image: url("../img/scaling.png");
 }
 @media only screen and (min-width: 700px) {
-  /* line 563, ../scss/screen.scss */
+  /* line 578, ../scss/screen.scss */
   #scaling {
     padding-top: 140px;
     padding-bottom: 210px;
   }
 }
 
-/* line 576, ../scss/screen.scss */
+/* line 588, ../scss/screen.scss */
+.scaling-bg {
+  background-image: url("../img/scaling.png");
+}
+
+/* line 594, ../scss/screen.scss */
 #innovation {
   color: #000;
   text-align: center;
-  background-image: url("../img/innovation.png");
 }
 @media only screen and (min-width: 700px) {
-  /* line 576, ../scss/screen.scss */
+  /* line 594, ../scss/screen.scss */
   #innovation {
     padding-top: 130px;
     padding-bottom: 380px;
   }
 }
 
-/* line 590, ../scss/screen.scss */
+/* line 605, ../scss/screen.scss */
+.innovation-bg {
+  background-image: url("../img/innovation.png");
+}
+
+/* line 615, ../scss/screen.scss */
 .tactic {
   float: left;
   width: 100%;
@@ -759,7 +775,7 @@ header .caption {
   background-color: #fff;
 }
 @media only screen and (min-width: 600px) {
-  /* line 590, ../scss/screen.scss */
+  /* line 615, ../scss/screen.scss */
   .tactic {
     float: left;
     width: 100%;
@@ -770,7 +786,7 @@ header .caption {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 590, ../scss/screen.scss */
+  /* line 615, ../scss/screen.scss */
   .tactic {
     float: left;
     width: 100%;
@@ -780,18 +796,18 @@ header .caption {
     background-color: #fff;
   }
 }
-/* line 616, ../scss/screen.scss */
+/* line 641, ../scss/screen.scss */
 .tactic a {
   text-decoration: underline;
 }
 
-/* line 618, ../scss/screen.scss */
+/* line 643, ../scss/screen.scss */
 .tactic-description {
   margin: 0 auto;
   width: 75%;
 }
 
-/* line 619, ../scss/screen.scss */
+/* line 644, ../scss/screen.scss */
 .client-link {
   display: block;
   margin: 30px auto 0;
@@ -799,13 +815,13 @@ header .caption {
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 623, ../scss/screen.scss */
+  /* line 648, ../scss/screen.scss */
   .tactic-description {
     width: 58.3870968%;
     float: left;
   }
 
-  /* line 627, ../scss/screen.scss */
+  /* line 652, ../scss/screen.scss */
   .client-link {
     width: 19.3548387%;
     margin-top: 0;
@@ -813,18 +829,18 @@ header .caption {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 635, ../scss/screen.scss */
+  /* line 660, ../scss/screen.scss */
   .tactic-description {
     width: 48.3870968%;
   }
 
-  /* line 636, ../scss/screen.scss */
+  /* line 661, ../scss/screen.scss */
   .client-link {
     width: 19.3548387%;
     margin-top: 0;
   }
 }
-/* line 643, ../scss/screen.scss */
+/* line 668, ../scss/screen.scss */
 footer {
   float: left;
   width: 100%;
@@ -833,24 +849,24 @@ footer {
   background-color: #222;
 }
 @media only screen and (min-width: 700px) {
-  /* line 643, ../scss/screen.scss */
+  /* line 668, ../scss/screen.scss */
   footer {
     padding: 115px  13.671875%;
   }
 }
-/* line 654, ../scss/screen.scss */
+/* line 679, ../scss/screen.scss */
 footer .cta-button {
   margin-top: 15px;
 }
 
-/* line 659, ../scss/screen.scss */
+/* line 684, ../scss/screen.scss */
 .mission-statement {
   width: 75%;
   margin: 0 auto;
   color: #ccc;
 }
 @media only screen and (min-width: 700px) {
-  /* line 659, ../scss/screen.scss */
+  /* line 684, ../scss/screen.scss */
   .mission-statement {
     float: left;
     width: 48.3870968%;
@@ -858,7 +874,7 @@ footer .cta-button {
   }
 }
 
-/* line 672, ../scss/screen.scss */
+/* line 697, ../scss/screen.scss */
 .still-address {
   width: 75%;
   padding: 0;
@@ -868,7 +884,7 @@ footer .cta-button {
   list-style: none;
 }
 @media only screen and (min-width: 700px) {
-  /* line 672, ../scss/screen.scss */
+  /* line 697, ../scss/screen.scss */
   .still-address {
     float: right;
     width: 48.3870968%;
@@ -877,15 +893,34 @@ footer .cta-button {
     text-align: right;
   }
 }
-/* line 688, ../scss/screen.scss */
+/* line 713, ../scss/screen.scss */
 .still-address .street-adress {
   text-decoration: underline;
 }
-/* line 690, ../scss/screen.scss */
+/* line 715, ../scss/screen.scss */
 .still-address p {
   margin: 0;
 }
-/* line 691, ../scss/screen.scss */
+/* line 716, ../scss/screen.scss */
 .still-address a {
   color: inherit;
+}
+
+/* Parallax Stuff */
+/* line 722, ../scss/screen.scss */
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 727, ../scss/screen.scss */
+.parallax-bg, .what-we-do .solve-challenges-bg, .validation-bg, .valuation-bg, .traction-bg, .scaling-bg, .innovation-bg {
+  height: 150%;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }

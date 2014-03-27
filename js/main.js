@@ -1,23 +1,4 @@
 // only start parallaxin' a background if you can see it
-// function slideInView(){
-//   
-//   var $slide = $('.parallax'),
-//       scrollPosition = $(window).scrollTop(),
-//       windowHeight = $(window).height();
-//       
-//   $slide.each(function( index ) {
-//     var slideId = $(this).attr('id');
-//     
-//     if (windowHeight + scrollPosition >= $('#'+ slideId).offset().top) {
-//       var parallaxFactor = $('#'+ slideId).offset().top - (scrollPosition + windowHeight);
-//       
-//       
-//       $('.' + slideId +'-bg').css('top', -(parallaxFactor*0.1)+'px')
-//     }
-//   });
-// }
-
-// only start parallaxin' a background if you can see it
 function slideInView(){
   
   var $slide = $('.parallax'),
@@ -30,10 +11,29 @@ function slideInView(){
     if (windowHeight + scrollPosition >= $('#'+ slideId).offset().top) {
       var parallaxFactor = $('#'+ slideId).offset().top - (scrollPosition + windowHeight);
       
-      $('#' + slideId).css('background-position', 'center '+((parallaxFactor*0.1))+'px')
+      
+      $('.' + slideId +'-bg').css('top', -(parallaxFactor*0.05) - 150 +'px')
     }
   });
 }
+
+// only start parallaxin' a background if you can see it
+// function slideInView(){
+//   
+//   var $slide = $('.parallax'),
+//       scrollPosition = $(window).scrollTop(),
+//       windowHeight = $(window).height();
+//       
+//   $slide.each(function( index ) {
+//     var slideId = $(this).attr('id');
+//     
+//     if (windowHeight + scrollPosition >= $('#'+ slideId).offset().top) {
+//       var parallaxFactor = $('#'+ slideId).offset().top - (scrollPosition + windowHeight);
+//       
+//       $('#' + slideId).css('background-position', 'center '+((parallaxFactor*0.1))+'px')
+//     }
+//   });
+// }
 
 // fade in the video player
 function playerInView(){

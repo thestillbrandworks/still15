@@ -386,20 +386,24 @@ and (max-width : 700px) {
   @extend .slide;
   color: #fff;
   text-align: right;
-  background-image: url('../img/what-we-do-bg.png');
 
     
   @media only screen and (min-width : 700px) {
-    .azimuth {
-      margin-top: 135px;
-      margin-right: 13.671875%;
-    }
+//    .azimuth {
+//      margin-top: 135px;
+//      margin-right: 13.671875%;
+//    }
   }
 
   @media only screen and (max-width : 700px) { 
       .slide-contents {
         padding-bottom: 0px;
       }
+   }
+   
+   .solve-challenges-bg {
+     @extend .parallax-bg;
+     background-image: url('../img/what-we-do-bg.png');
    }
      
   p {
@@ -415,7 +419,7 @@ and (max-width : 700px) {
     float: right;
   }
  }   
-
+ 
  
 
 
@@ -525,7 +529,6 @@ and (max-width : 700px) {
   @extend .challenge;
   color: #fff;
   text-align: center;
-  background-image: url("../img/validation.png");
   
   @media only screen and (min-width : 700px) {  
 	color: #c4ffee;
@@ -533,12 +536,16 @@ and (max-width : 700px) {
     padding-bottom: 330px;
   }
 }
+
+  .validation-bg {
+    @extend .parallax-bg;
+    background-image: url('../img/validation.png');
+  }
     
 #valuation {
   @extend .challenge;
   color: #c1e7ff;
   text-align: center;
-  background-image: url('../img/valuation.png');
   
   @media only screen and (min-width : 700px) {  
     padding-top: 171px;
@@ -546,44 +553,62 @@ and (max-width : 700px) {
   }
 }
 
+  .valuation-bg {
+    @extend .parallax-bg;
+    background-image: url('../img/valuation.png');
+  }
+
 
 #traction {
   @extend .challenge;
   color: #fff;
   text-align: center;
-  background-image: url('../img/traction.png');
   
   @media only screen and (min-width : 700px) {  
     padding-top: 135px;
     padding-bottom: 240px;
   }
 }
+  .traction-bg {
+    @extend .parallax-bg;
+    background-image: url('../img/traction.png');
+  }
 
 
 #scaling {
   @extend .challenge;
   color: #fff;
   text-align: center;
-  background-image: url('../img/scaling.png');
   
   @media only screen and (min-width : 700px) {  
     padding-top: 140px;
     padding-bottom: 210px;
   }
 }
+  .scaling-bg {
+     @extend .parallax-bg;
+     background-image: url('../img/scaling.png');
+  }
 
 
 #innovation {
   @extend .challenge;
   color: #000;
   text-align: center;
-  background-image: url('../img/innovation.png');
   
   @media only screen and (min-width : 700px) {  
     padding-top: 130px;
     padding-bottom: 380px;
   }
 }
+
+  .innovation-bg {
+     @extend .parallax-bg;
+     background-image: url('../img/innovation.png');
+  }
+  
+
+
 
 
 
@@ -693,3 +718,19 @@ footer {
 
 
 
+/* Parallax Stuff */
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+  .parallax-bg {
+    height: 150%;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
