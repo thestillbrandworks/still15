@@ -312,17 +312,27 @@ and (max-width : 700px) {
 }
 
   .client-list li {
-    margin: 40px 0;
-    
-    
-    @media only screen and (min-width : 700px) {
-      display: inline;
-      margin: 0 0 0 80px;
-    }
-    
-    @media only screen and (min-width : 900px) {
-      margin: 0 0 0 100px;
-    }
+	@media only screen and (max-width : 1280px) { margin: 40px 0 40px 6%; }
+	@media only screen and (min-width : 1280px) { margin: 40px 0 40px 8%; } 
+	
+	/* Since Moz does not support zoom, we reduce margin to compensate for larger img size from the style below this one */
+	@-moz-document url-prefix() { 
+		margin-left: 0;
+	}
+	
+    img { 
+		zoom: 0.5;
+		-moz-transform: scale(0.5);
+	}	
+	
+    @media only screen and (max-width : 700px) { 
+		display: block;
+		margin: 60px auto 60px auto;
+	}
+	
+    @media only screen and (min-width : 700px) { 
+		display: inline;
+	}
   }
 
   .client-list li:first-child { margin-left: 0;}   
