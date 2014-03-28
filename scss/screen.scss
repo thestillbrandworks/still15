@@ -146,6 +146,7 @@ h4 {
     color: #fff;
     font-family: "freight-display-pro", serif;
     font-size: 1.875em;
+	letter-spacing: 1px;
     
     .underline {
       display: block;
@@ -191,9 +192,7 @@ h4 {
   }
 
   
-@media only screen and (min-width : 700px) {
-  .slide-contents { padding: 0; }
-  
+@media only screen and (min-width : 700px) { 
   .slide-contents p {
     padding-right: 10%; 
     padding-left: 10%; 
@@ -230,10 +229,7 @@ and (min-width : 1100px) {
   @media only screen and (min-width : 700px) { margin-bottom: 90px; }
 }
 
-.parallax {
-    @media only screen and (min-width : 700px) { 
-  		  background-size: 150%;
-	}
+.parallax-background {
     @media only screen and (max-width : 700px) { 
     	 background-size: cover;
     	 height: 100%;
@@ -245,12 +241,11 @@ and (min-width : 1100px) {
 
 // Header
 /////////////////
-header {
-  @extend .slide;
-  background-image: url('../img/mclaren-tech-centre.jpg'); 
-  background-size: 150%;
+.hero-bg {
+  @extend .parallax-bg;
+  background-image: url('../img/mclaren-tech-centre.jpg');
+  @media only screen and (max-width : 700px) { background-position: center center !important; }
 }
-
 
 .motto { 
   float: left; 
@@ -269,6 +264,7 @@ and (min-width : 700px) {
   .motto.slide-contents {
     width: 71.296%;
   	margin: 0 9% 0 20.703125%;
+  	padding: 0;
   }
 }  
 
@@ -527,11 +523,10 @@ and (max-width : 700px) {
 
 #validation {
   @extend .challenge;
-  color: #fff;
+  color: #c4ffee;
   text-align: center;
   
   @media only screen and (min-width : 700px) {  
-	color: #c4ffee;
     padding-top: 140px;
     padding-bottom: 330px;
   }
@@ -539,7 +534,8 @@ and (max-width : 700px) {
 
   .validation-bg {
     @extend .parallax-bg;
-    background-image: url('../img/validation.png');
+    background-image: url('../img/validation-large.png');
+	@media only screen and (max-width : 700px) { background-position: 70% top !important; }
   }
     
 #valuation {
@@ -561,7 +557,7 @@ and (max-width : 700px) {
 
 #traction {
   @extend .challenge;
-  color: #fff;
+  color: #ddd;
   text-align: center;
   
   @media only screen and (min-width : 700px) {  
@@ -587,7 +583,8 @@ and (max-width : 700px) {
 }
   .scaling-bg {
      @extend .parallax-bg;
-     background-image: url('../img/scaling.png');
+     background-image: url('../img/scaling.jpg');
+     @media only screen and (max-width : 700px) { background-position: center center !important; }
   }
 
 
@@ -604,7 +601,8 @@ and (max-width : 700px) {
 
   .innovation-bg {
      @extend .parallax-bg;
-     background-image: url('../img/innovation.png');
+     @media only screen and (max-width : 600px) { background-image: url('../img/innovation-small.jpg'); }
+	 @media only screen and (min-width : 600px) { background-image: url('../img/innovation.png'); }
   }
   
 
@@ -725,7 +723,7 @@ footer {
 }
 
   .parallax-bg {
-    height: 150%;
+    height: 110%;
     width: 100%;
     background-size: cover;
     background-position: top center;

@@ -12,7 +12,7 @@ function slideInView(){
       var parallaxFactor = $('#'+ slideId).offset().top - (scrollPosition + windowHeight);
       
       
-      $('.' + slideId +'-bg').css('top', -(parallaxFactor*0.05) - 150 +'px')
+      $('.' + slideId +'-bg').css('top', -(parallaxFactor*0.125) - 150 +'px')
     }
   });
 }
