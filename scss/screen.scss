@@ -161,12 +161,21 @@ h4 {
       
       .underline { background-color: #000; }
     }
-}    
+}
 
-    
+a { 
+	color: #000;
+	&:hover { 
+	  color: #999;
+	  @include transition-property(color, scale, opacity);
+	  @include transition-duration(.25s);	
+	}
+}
 
-
-
+::selection {
+  background: #000;
+  color: #fff;
+}
 
 
 
@@ -220,13 +229,22 @@ and (min-width : 1100px) {
   display: inline-block;
   padding: 15px 30px 13px;
   border: 2px solid #fff;
-  
   color: #fff;
   font-family: "freight-text-pro", serif;
   text-decoration: none;
   
   @media only screen and (max-width : 700px) { margin-bottom: 60px; }
   @media only screen and (min-width : 700px) { margin-bottom: 90px; }
+
+  &:hover {
+	background: #fff;
+	color: #000;
+	border: 2px solid #000;
+    @include box-shadow(#fff 0 0 0 2px);
+	margin-left: 0px;
+	@include transition-property(background,color);
+    @include transition-duration(1s);	
+  }
 }
 
 .parallax-background {
@@ -265,6 +283,7 @@ and (min-width : 700px) {
     width: 71.296%;
   	margin: 0 9% 0 20.703125%;
   	padding: 0;
+  	overflow: visible;
   }
 }  
 
@@ -282,7 +301,7 @@ and (max-width : 700px) {
 /////////////////
 .brag {
   @extend .slide;
-  color: #a33e1d;
+  color: #8e371a;
   text-align: center;
   background-color: #ff6633;
 }
@@ -362,25 +381,30 @@ and (max-width : 700px) {
   
   .play-button {
     display: block;
-    margin: 0 auto 60px;
+    margin: 0 auto;
+	padding: 60px;
     text-indent: -9999px;
     width: 38px;
     height: 47px;
-    background: url("/img/play-button.png") no-repeat;
+    background: url("/img/play-button.png") no-repeat center;
     @include image-2x("/img/play-button2x.png", 38px, 47px);
     
-    @media only screen and (min-width : 700px) {
-          opacity: 0;
-          @include transition-property(opacity);
-      @include transition-duration(2s);
-    }
-    
+	@media only screen and (min-width : 700px) {
+		opacity: 0;
+		@include transition-duration(2s);
+	}
+		
+	&:hover {
+      @include scale(.9);
+	}
 
   }
   
   .player {
-    display: none;
-    position: absolute;
+	@media only screen and (min-width : 700px) {
+      display: none;
+      position: absolute;
+	}
     top: 0;
     left: 0;
     width: 100%;
@@ -537,8 +561,11 @@ and (max-width : 700px) {
   text-align: center;
   
   @media only screen and (min-width : 700px) {  
-    padding-top: 140px;
+    padding-top: 135px;
     padding-bottom: 330px;
+  }
+  @media only screen and (max-width : 700px) {  
+	  color: #e8fff8;
   }
 }
 
@@ -552,9 +579,10 @@ and (max-width : 700px) {
   @extend .challenge;
   color: #c1e7ff;
   text-align: center;
-  
+
+  a:hover { color: #fff; }
   @media only screen and (min-width : 700px) {  
-    padding-top: 171px;
+    padding-top: 135px;
     padding-bottom: 360px;
   }
 }
@@ -572,7 +600,7 @@ and (max-width : 700px) {
   
   @media only screen and (min-width : 700px) {  
     padding-top: 135px;
-    padding-bottom: 240px;
+    padding-bottom: 360px;
   }
 }
   .traction-bg {
@@ -583,12 +611,13 @@ and (max-width : 700px) {
 
 #scaling {
   @extend .challenge;
-  color: #fff;
+  color: #d8e9ff;
   text-align: center;
+  a:hover { color: #fff; }
   
   @media only screen and (min-width : 700px) {  
-    padding-top: 140px;
-    padding-bottom: 210px;
+    padding-top: 135px;
+    padding-bottom: 360px;
   }
 }
   .scaling-bg {
@@ -603,9 +632,11 @@ and (max-width : 700px) {
   color: #000;
   text-align: center;
   
+  a:hover { color: #ccc; }
+  
   @media only screen and (min-width : 700px) {  
-    padding-top: 130px;
-    padding-bottom: 380px;
+    padding-top: 120px;
+    padding-bottom: 375px;
   }
 }
 
@@ -686,6 +717,9 @@ footer {
   
   .cta-button {
     margin-top: 15px;
+	@media only screen and (max-width : 700px) { &:after { content:"."; } }
+	@media only screen and (min-width : 700px) { &:after { content:", let's change things."; } }
+	
   }
 }
 
@@ -722,6 +756,11 @@ footer {
     
     p { margin: 0;}
     a { color: inherit; }
+	a:hover { 
+	  color: #999;
+	  @include transition-property(color);
+	  @include transition-duration(1s);	
+	}
   }
 
 

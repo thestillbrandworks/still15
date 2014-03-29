@@ -1,7 +1,7 @@
 // Import helpers
 @import "compass";
 @import "susy";
-
+@import "compass/css3";
 $susy: (
 container: auto,
 columns: 11,
@@ -71,7 +71,6 @@ body {
 }
 
 ::selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
