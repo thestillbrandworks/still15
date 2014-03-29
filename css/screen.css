@@ -1,58 +1,1057 @@
-/*
-Syntax error: Invalid CSS after "    text-indent": expected ";", was ": -9999px;"
-        on line 38 of /Users/andrew/Sites/wearethestill.com/scss/screen.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 44, ../scss/_default.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-Backtrace:
-/Users/andrew/Sites/wearethestill.com/scss/screen.scss:38
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:1308:in `expected'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:1242:in `expected'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:1237:in `tok!'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:687:in `block in declaration_or_ruleset'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:1282:in `call'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:1282:in `rethrow'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:655:in `block_child'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:647:in `block_contents'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:636:in `block'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:630:in `ruleset'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:654:in `block_child'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:647:in `block_contents'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:116:in `stylesheet'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/scss/parser.rb:41:in `parse'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/engine.rb:409:in `_to_tree'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.3.3/lib/sass/engine.rb:274:in `render'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:16:in `render'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:166:in `block in compile'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/logger.rb:46:in `red'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:165:in `compile'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:144:in `compile_if_required'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:129:in `block (2 levels) in run'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `each'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `block in run'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:126:in `run'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/watcher/compiler.rb:24:in `compile'
-/Users/andrew/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/1.9.1/forwardable.rb:201:in `compile'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:101:in `sass_modified'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:89:in `sass_callback'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/watcher/watch.rb:14:in `call'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/watcher/watch.rb:14:in `run_callback'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:69:in `block in listen_callback'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:66:in `each'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:66:in `listen_callback'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/listen-1.1.6/lib/listen/listener.rb:236:in `call'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/listen-1.1.6/lib/listen/listener.rb:271:in `block in initialize_adapter'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `call'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `report_changes'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/listen-1.1.6/lib/listen/adapter.rb:313:in `poll_changed_directories'
-/Users/andrew/.rvm/gems/ruby-1.9.3-p545@global/gems/listen-1.1.6/lib/listen/adapter.rb:289:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"    text-indent\": expected \";\", was \": -9999px;\"\A         on line 38 of /Users/andrew/Sites/wearethestill.com/scss/screen.scss"; }
+/* line 48, ../scss/_default.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 56, ../scss/_default.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 68, ../scss/_default.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 73, ../scss/_default.scss */
+::selection {
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 81, ../scss/_default.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 94, ../scss/_default.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 102, ../scss/_default.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 112, ../scss/_default.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 122, ../scss/_default.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 29, ../scss/screen.scss */
+*, h3, h4, h5 {
+  font-weight: 200;
+}
+
+/* line 31, ../scss/screen.scss */
+h1 {
+  display: block;
+  float: left;
+  clear: both;
+  padding-left: 3.90625%;
+  margin-top: 45px;
+  margin-right: 100%;
+  text-indent: -9999px;
+}
+@media only screen and (min-width: 700px) {
+  /* line 31, ../scss/screen.scss */
+  h1 {
+    margin-bottom: 145px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 31, ../scss/screen.scss */
+  h1 {
+    margin-bottom: 115px;
+  }
+}
+/* line 42, ../scss/screen.scss */
+h1 a {
+  display: block;
+  height: 22px;
+  width: 132px;
+  background: url("../img/word-mark.png") no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 42, ../scss/screen.scss */
+  h1 a {
+    background-image: url("/img/word-mark2x.png");
+    background-size: 132px 22px;
+  }
+}
+
+/* line 51, ../scss/screen.scss */
+h2 {
+  margin-top: 0;
+  font-family: "freight-display-pro", serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 700px) {
+  /* line 51, ../scss/screen.scss */
+  h2 {
+    font-size: 2.125em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 51, ../scss/screen.scss */
+  h2 {
+    font-size: 2.125em;
+  }
+}
+/* line 60, ../scss/screen.scss */
+.motto h2 {
+  margin-bottom: 145px;
+  color: #fff;
+}
+/* line 65, ../scss/screen.scss */
+.brag h2 {
+  margin-bottom: 45px;
+  color: #fff;
+}
+/* line 70, ../scss/screen.scss */
+.demo-reel h2 {
+  margin-bottom: 40px;
+  color: #191919;
+}
+@media only screen and (min-width: 700px) {
+  /* line 75, ../scss/screen.scss */
+  .what-we-do h2 {
+    float: right;
+    width: 56.25%;
+  }
+}
+/* line 83, ../scss/screen.scss */
+.our-process h2 {
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 700px) {
+  /* line 83, ../scss/screen.scss */
+  .our-process h2 {
+    margin-right: 17.1875%;
+    margin-left: 17.1875%;
+  }
+}
+
+/* line 95, ../scss/screen.scss */
+h3 {
+  margin: 50px auto;
+  text-indent: -9999px;
+}
+
+/* line 97, ../scss/screen.scss */
+#validation h3 {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  width: 186px;
+  height: 52px;
+  background: url("/img/eurika-logo.png") no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 97, ../scss/screen.scss */
+  #validation h3 {
+    background-image: url("/img/eurika-logo2x.png");
+    background-size: 186px 52px;
+  }
+}
+
+/* line 106, ../scss/screen.scss */
+#valuation h3 {
+  margin-top: 100px;
+  margin-bottom: 31px;
+  width: 170px;
+  height: 50px;
+  background: url("/img/bazinga-logo.png") no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 106, ../scss/screen.scss */
+  #valuation h3 {
+    background-image: url("/img/bazinga-logo2x.png");
+    background-size: 170px 50px;
+  }
+}
+
+/* line 115, ../scss/screen.scss */
+#traction h3 {
+  margin-top: 130px;
+  margin-bottom: 56px;
+  width: 222px;
+  height: 48px;
+  background: url("/img/mojeh-logo.png") no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 115, ../scss/screen.scss */
+  #traction h3 {
+    background-image: url("/img/mojeh-logo2x.png");
+    background-size: 222px 48px;
+  }
+}
+
+/* line 124, ../scss/screen.scss */
+#scaling h3 {
+  margin-top: 160px;
+  margin-bottom: 50px;
+  width: 248px;
+  height: 34px;
+  background: url("/img/avigilon-logo.png") no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 124, ../scss/screen.scss */
+  #scaling h3 {
+    background-image: url("/img/avigilon-logo2x.png");
+    background-size: 248px 34px;
+  }
+}
+
+/* line 133, ../scss/screen.scss */
+#innovation h3 {
+  margin-top: 100px;
+  margin-bottom: 45px;
+  width: 275px;
+  height: 39px;
+  background: url("/img/mclaren-logo.png") no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 133, ../scss/screen.scss */
+  #innovation h3 {
+    background-image: url("/img/mclaren-logo2x.png");
+    background-size: 275px 39px;
+  }
+}
+
+/* line 144, ../scss/screen.scss */
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "freight-display-pro", serif;
+  font-size: 1.875em;
+  letter-spacing: 1px;
+}
+/* line 152, ../scss/screen.scss */
+h4 .underline {
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+/* line 160, ../scss/screen.scss */
+#innovation h4 {
+  color: #000;
+}
+/* line 163, ../scss/screen.scss */
+#innovation h4 .underline {
+  background-color: #000;
+}
+
+/* line 167, ../scss/screen.scss */
+a {
+  color: #000;
+}
+/* line 169, ../scss/screen.scss */
+a:hover {
+  color: #999;
+  -moz-transition-property: color, scale, opacity;
+  -o-transition-property: color, scale, opacity;
+  -webkit-transition-property: color, scale, opacity;
+  transition-property: color, scale, opacity;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 176, ../scss/screen.scss */
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+/* Global */
+/* line 184, ../scss/screen.scss */
+.slide, .brag, .demo-reel, .what-we-do, .our-process {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+
+/* line 191, ../scss/screen.scss */
+.slide-contents {
+  overflow: hidden;
+  max-width: 1280px;
+  padding: 60px 3.90625%;
+  margin: 0 auto;
+}
+/* line 197, ../scss/screen.scss */
+.slide-contents p {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.666666667;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 206, ../scss/screen.scss */
+  .slide-contents p {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 214, ../scss/screen.scss */
+  .slide-contents p {
+    padding-right: 30.078125%;
+    padding-left: 30.078125%;
+  }
+}
+/* line 220, ../scss/screen.scss */
+.caption {
+  margin-bottom: 30px;
+  color: #e8e8e8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
+  width: 100%;
+}
+
+/* line 229, ../scss/screen.scss */
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px 13px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: "freight-text-pro", serif;
+  text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+  /* line 229, ../scss/screen.scss */
+  .cta-button {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 229, ../scss/screen.scss */
+  .cta-button {
+    margin-bottom: 90px;
+  }
+}
+/* line 240, ../scss/screen.scss */
+.cta-button:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  -moz-box-shadow: white 0 0 0 2px;
+  -webkit-box-shadow: white 0 0 0 2px;
+  box-shadow: white 0 0 0 2px;
+  margin-left: 0px;
+  -moz-transition-property: background, color;
+  -o-transition-property: background, color;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+@media only screen and (max-width: 700px) {
+  /* line 251, ../scss/screen.scss */
+  .parallax-background {
+    background-size: cover;
+    height: 100%;
+    background-position: left bottom !important;
+  }
+}
+
+/* line 263, ../scss/screen.scss */
+.hero-bg {
+  background-image: url("../img/mclaren-tech-centre.jpg");
+}
+@media only screen and (max-width: 700px) {
+  /* line 263, ../scss/screen.scss */
+  .hero-bg {
+    background-position: center center !important;
+  }
+}
+
+/* line 269, ../scss/screen.scss */
+.motto {
+  float: left;
+}
+
+/* line 273, ../scss/screen.scss */
+.logo {
+  margin-bottom: 45px;
+}
+
+/* line 277, ../scss/screen.scss */
+header .caption {
+  float: left;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 283, ../scss/screen.scss */
+  .motto.slide-contents {
+    width: 71.296%;
+    margin: 0 9% 0 20.703125%;
+    padding: 0;
+    overflow: visible;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 293, ../scss/screen.scss */
+  .motto {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* line 297, ../scss/screen.scss */
+  .motto img {
+    display: none;
+  }
+
+  /* line 298, ../scss/screen.scss */
+  .motto h2 {
+    margin-bottom: 120px;
+  }
+}
+/* line 303, ../scss/screen.scss */
+.brag {
+  color: #8e371a;
+  text-align: center;
+  background-color: #ff6633;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 312, ../scss/screen.scss */
+  .slide-contents {
+    margin-top: 165px;
+    margin-bottom: 90px;
+  }
+
+  /* line 317, ../scss/screen.scss */
+  .brag p {
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+}
+/* line 329, ../scss/screen.scss */
+.client-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 334, ../scss/screen.scss */
+.client-list li {
+  /* Since Moz does not support zoom, we reduce margin to compensate for larger img size from the style below this one */
+}
+@media only screen and (max-width: 1280px) {
+  /* line 334, ../scss/screen.scss */
+  .client-list li {
+    margin: 40px 0 40px 6%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 334, ../scss/screen.scss */
+  .client-list li {
+    margin: 40px 0 40px 8%;
+  }
+}
+@-moz-document url-prefix() {
+  /* line 334, ../scss/screen.scss */
+  .client-list li {
+    margin-left: 0;
+  }
+}
+/* line 343, ../scss/screen.scss */
+.client-list li img {
+  zoom: 0.5;
+  -moz-transform: scale(0.5);
+}
+@media only screen and (max-width: 700px) {
+  /* line 334, ../scss/screen.scss */
+  .client-list li {
+    display: block;
+    margin: 60px auto 60px auto;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 334, ../scss/screen.scss */
+  .client-list li {
+    display: inline;
+  }
+}
+
+/* line 358, ../scss/screen.scss */
+.client-list li:first-child {
+  margin-left: 0;
+}
+
+/* line 365, ../scss/screen.scss */
+.demo-reel {
+  background-color: #fff;
+  text-align: center;
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  -webkit-transition-property: height;
+  transition-property: height;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 372, ../scss/screen.scss */
+.demo-reel p {
+  color: #a3a3a3;
+}
+@media only screen and (min-width: 700px) {
+  /* line 374, ../scss/screen.scss */
+  .demo-reel .slide-contents {
+    margin-top: 225px;
+    margin-bottom: 225px;
+  }
+}
+
+/* line 383, ../scss/screen.scss */
+.play-button {
+  display: block;
+  margin: 0 auto;
+  padding: 60px;
+  text-indent: -9999px;
+  width: 38px;
+  height: 47px;
+  background: url("/img/play-button.png") no-repeat center;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 383, ../scss/screen.scss */
+  .play-button {
+    background-image: url("/img/play-button2x.png");
+    background-size: 38px 47px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 383, ../scss/screen.scss */
+  .play-button {
+    opacity: 0;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+  }
+}
+/* line 398, ../scss/screen.scss */
+.play-button:hover {
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+}
+
+/* line 404, ../scss/screen.scss */
+.player {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media only screen and (min-width: 700px) {
+  /* line 404, ../scss/screen.scss */
+  .player {
+    display: none;
+    position: absolute;
+  }
+}
+
+/* line 416, ../scss/screen.scss */
+.what-we-do {
+  color: #fff;
+  text-align: right;
+}
+@media only screen and (max-width: 700px) {
+  /* line 430, ../scss/screen.scss */
+  .what-we-do .slide-contents {
+    padding-bottom: 0px;
+  }
+}
+/* line 435, ../scss/screen.scss */
+.what-we-do .solve-challenges-bg {
+  background-image: url("../img/what-we-do-bg.png");
+}
+/* line 440, ../scss/screen.scss */
+.what-we-do p {
+  float: right;
+  clear: both;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 225px;
+  max-width: 390px;
+}
+/* line 449, ../scss/screen.scss */
+.what-we-do .caption {
+  float: right;
+}
+
+/* line 462, ../scss/screen.scss */
+.our-process {
+  color: #000;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  /* line 468, ../scss/screen.scss */
+  .our-process .slide-contents {
+    margin-top: 240px;
+    margin-bottom: 135px;
+  }
+}
+
+/* line 476, ../scss/screen.scss */
+.process-outline {
+  padding: 0;
+  margin-bottom: 60px;
+  color: #aaa;
+  list-style: none;
+  text-align: center;
+}
+/* line 483, ../scss/screen.scss */
+.process-outline li {
+  width: 40%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ccc;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 600px) {
+  /* line 483, ../scss/screen.scss */
+  .process-outline li {
+    width: auto;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 0;
+    border-left: 1px solid #ccc;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 483, ../scss/screen.scss */
+  .process-outline li {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* line 483, ../scss/screen.scss */
+  .process-outline li {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+/* line 509, ../scss/screen.scss */
+.process-outline li:first-child {
+  border: none;
+}
+
+/* line 519, ../scss/screen.scss */
+.challenge, #validation, #valuation, #traction, #scaling, #innovation {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+/* line 526, ../scss/screen.scss */
+.challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents, #traction .challenge-contents, #scaling .challenge-contents, #innovation .challenge-contents {
+  overflow: hidden;
+  max-width: 1280px;
+  padding: 60px 3.90625%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 700px) {
+  /* line 526, ../scss/screen.scss */
+  .challenge .challenge-contents, #validation .challenge-contents, #valuation .challenge-contents, #traction .challenge-contents, #scaling .challenge-contents, #innovation .challenge-contents {
+    padding: 0;
+  }
+}
+/* line 537, ../scss/screen.scss */
+.challenge p, #validation p, #valuation p, #traction p, #scaling p, #innovation p {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.666666667;
+}
+/* line 543, ../scss/screen.scss */
+.challenge a, #validation a, #valuation a, #traction a, #scaling a, #innovation a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 552, ../scss/screen.scss */
+  .challenge-contents p {
+    padding-right: 33.59375%;
+    padding-left: 33.59375%;
+  }
+}
+/* line 559, ../scss/screen.scss */
+#validation {
+  color: #c4ffee;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  /* line 559, ../scss/screen.scss */
+  #validation {
+    padding-top: 135px;
+    padding-bottom: 330px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 559, ../scss/screen.scss */
+  #validation {
+    color: #e8fff8;
+  }
+}
+
+/* line 573, ../scss/screen.scss */
+.validation-bg {
+  background-image: url("../img/validation-large.png");
+}
+@media only screen and (max-width: 700px) {
+  /* line 573, ../scss/screen.scss */
+  .validation-bg {
+    background-position: 70% top !important;
+  }
+}
+
+/* line 579, ../scss/screen.scss */
+#valuation {
+  color: #c1e7ff;
+  text-align: center;
+}
+/* line 584, ../scss/screen.scss */
+#valuation a:hover {
+  color: #fff;
+}
+@media only screen and (min-width: 700px) {
+  /* line 579, ../scss/screen.scss */
+  #valuation {
+    padding-top: 135px;
+    padding-bottom: 360px;
+  }
+}
+
+/* line 591, ../scss/screen.scss */
+.valuation-bg {
+  background-image: url("../img/valuation.png");
+}
+
+/* line 597, ../scss/screen.scss */
+#traction {
+  color: #ddd;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  /* line 597, ../scss/screen.scss */
+  #traction {
+    padding-top: 135px;
+    padding-bottom: 360px;
+  }
+}
+
+/* line 607, ../scss/screen.scss */
+.traction-bg {
+  background-image: url("../img/traction.png");
+}
+
+/* line 613, ../scss/screen.scss */
+#scaling {
+  color: #d8e9ff;
+  text-align: center;
+}
+/* line 617, ../scss/screen.scss */
+#scaling a:hover {
+  color: #fff;
+}
+@media only screen and (min-width: 700px) {
+  /* line 613, ../scss/screen.scss */
+  #scaling {
+    padding-top: 135px;
+    padding-bottom: 360px;
+  }
+}
+
+/* line 624, ../scss/screen.scss */
+.scaling-bg {
+  background-image: url("../img/scaling.jpg");
+}
+@media only screen and (max-width: 700px) {
+  /* line 624, ../scss/screen.scss */
+  .scaling-bg {
+    background-position: center center !important;
+  }
+}
+
+/* line 631, ../scss/screen.scss */
+#innovation {
+  color: #000;
+  text-align: center;
+}
+/* line 636, ../scss/screen.scss */
+#innovation a:hover {
+  color: #ccc;
+}
+@media only screen and (min-width: 700px) {
+  /* line 631, ../scss/screen.scss */
+  #innovation {
+    padding-top: 120px;
+    padding-bottom: 375px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 644, ../scss/screen.scss */
+  .innovation-bg {
+    background-image: url("../img/innovation-small.jpg");
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 644, ../scss/screen.scss */
+  .innovation-bg {
+    background-image: url("../img/innovation.png");
+  }
+}
+
+/* line 655, ../scss/screen.scss */
+.tactic {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+  color: #191919;
+  line-height: 1.875;
+  background-color: #fff;
+}
+@media only screen and (min-width: 600px) {
+  /* line 655, ../scss/screen.scss */
+  .tactic {
+    float: left;
+    width: 100%;
+    padding: 105px 5.59375%;
+    color: #191919;
+    line-height: 1.875;
+    background-color: #fff;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 655, ../scss/screen.scss */
+  .tactic {
+    float: left;
+    width: 100%;
+    padding: 105px 13.59375%;
+    color: #191919;
+    line-height: 1.875;
+    background-color: #fff;
+  }
+}
+/* line 681, ../scss/screen.scss */
+.tactic a {
+  text-decoration: underline;
+}
+
+/* line 683, ../scss/screen.scss */
+.tactic-description {
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* line 684, ../scss/screen.scss */
+.client-link {
+  display: block;
+  margin: 30px auto 0;
+  width: 75%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 688, ../scss/screen.scss */
+  .tactic-description {
+    width: 58.3870968%;
+    float: left;
+  }
+
+  /* line 692, ../scss/screen.scss */
+  .client-link {
+    width: 19.3548387%;
+    margin-top: 0;
+    float: right;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 700, ../scss/screen.scss */
+  .tactic-description {
+    width: 48.3870968%;
+  }
+
+  /* line 701, ../scss/screen.scss */
+  .client-link {
+    width: 19.3548387%;
+    margin-top: 0;
+  }
+}
+/* line 708, ../scss/screen.scss */
+footer {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+  line-height: 1.875;
+  background-color: #222;
+}
+@media only screen and (min-width: 700px) {
+  /* line 708, ../scss/screen.scss */
+  footer {
+    padding: 115px  13.671875%;
+  }
+}
+/* line 719, ../scss/screen.scss */
+footer .cta-button {
+  margin-top: 15px;
+}
+@media only screen and (max-width: 700px) {
+  /* line 721, ../scss/screen.scss */
+  footer .cta-button:after {
+    content: ".";
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 722, ../scss/screen.scss */
+  footer .cta-button:after {
+    content: ", let's change things.";
+  }
+}
+
+/* line 727, ../scss/screen.scss */
+.mission-statement {
+  width: 75%;
+  margin: 0 auto;
+  color: #ccc;
+}
+@media only screen and (min-width: 700px) {
+  /* line 727, ../scss/screen.scss */
+  .mission-statement {
+    float: left;
+    width: 48.3870968%;
+    margin: 0;
+  }
+}
+
+/* line 740, ../scss/screen.scss */
+.still-address {
+  width: 75%;
+  padding: 0;
+  margin: 0 auto;
+  color: #fff;
+  font-size: .875em;
+  list-style: none;
+}
+@media only screen and (min-width: 700px) {
+  /* line 740, ../scss/screen.scss */
+  .still-address {
+    float: right;
+    width: 48.3870968%;
+    margin: 0;
+    margin-top: 15px;
+    text-align: right;
+  }
+}
+/* line 756, ../scss/screen.scss */
+.still-address .street-adress {
+  text-decoration: underline;
+}
+/* line 758, ../scss/screen.scss */
+.still-address p {
+  margin: 0;
+}
+/* line 759, ../scss/screen.scss */
+.still-address a {
+  color: inherit;
+}
+/* line 760, ../scss/screen.scss */
+.still-address a:hover {
+  color: #999;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+/* Parallax Stuff */
+/* line 770, ../scss/screen.scss */
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 775, ../scss/screen.scss */
+.parallax-bg, .hero-bg, .what-we-do .solve-challenges-bg, .validation-bg, .valuation-bg, .traction-bg, .scaling-bg, .innovation-bg {
+  height: 110%;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
