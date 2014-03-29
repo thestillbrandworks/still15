@@ -169,7 +169,7 @@ a {
 	&:hover { 
 	  color: #999;
 	  @include transition-property(color, scale, opacity);
-	  @include transition-duration(.25s);	
+	  @include transition-duration(.5s);	
 	}
 }
 
