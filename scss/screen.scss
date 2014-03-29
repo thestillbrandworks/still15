@@ -249,6 +249,7 @@ and (min-width : 1100px) {
 }
 
 .parallax-background {
+	margin-top: -15px;
     @media only screen and (max-width : 700px) { 
     	 background-size: cover;
     	 height: 100%;
