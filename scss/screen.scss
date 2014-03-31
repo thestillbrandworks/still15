@@ -382,7 +382,6 @@ and (max-width : 700px) {
 } 
   
   .play-button {
-    display: block;
     margin: 0 auto;
 	padding: 60px;
     text-indent: -9999px;
@@ -390,8 +389,12 @@ and (max-width : 700px) {
     height: 47px;
     background: url("/img/play-button.png") no-repeat center;
     @include image-2x("/img/play-button2x.png", 38px, 47px);
-    
+	
+	@media only screen and (max-width : 700px) {
+		display: none;
+	}
 	@media only screen and (min-width : 700px) {
+		display: block;
 		opacity: 0;
 		@include transition-duration(2s);
 	}
