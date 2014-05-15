@@ -440,7 +440,11 @@ and (max-width : 700px) {
      @extend .parallax-bg;
      background-image: url('../img/what-we-do-bg.png');
    }
-     
+   
+   @media only screen and (min-width : 700px) {
+	   #solve-challenges .solve-challenges-bg { background-position: center 25% }
+   }
+   
   p {
       float: right;
       clear: both;
@@ -494,22 +498,17 @@ and (max-width : 700px) {
     @media only screen and (min-width : 600px) {
       width: auto;
       display: inline;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 5%;
+      padding-right: 5%;
       border-top: 0;
       border-left: 1px solid #ccc;
     }
     
     @media only screen and (min-width : 700px) {
-      padding-left: 40px;
-      padding-right: 40px;
+	  padding-left: 5%;
+	  padding-right: 5%;
     }
-    
-    @media only screen and (min-width : 900px) {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-    
+
     &:first-child { border: none; }
   }
   
@@ -592,11 +591,18 @@ and (max-width : 700px) {
   }
 }
 
+@media only screen and (max-width: 700px) {
+	#valuation { color: #fff; }
+}
+
   .valuation-bg {
     @extend .parallax-bg;
-    background-image: url('../img/valuation.png');
+    background-image: url('../img/valuation.jpg');
   }
 
+  @media only screen and (min-width : 700px) {  
+    #valuation .valuation-bg { background-position: center bottom; }
+  }
 
 #traction {
   @extend .challenge;
@@ -648,7 +654,10 @@ and (max-width : 700px) {
   .innovation-bg {
      @extend .parallax-bg;
      @media only screen and (max-width : 600px) { background-image: url('../img/innovation-small.jpg'); }
-	 @media only screen and (min-width : 600px) { background-image: url('../img/innovation.png'); }
+	 @media only screen and (min-width : 600px) { 
+	  background-image: url('../img/innovation.png');
+	  background-position: center 60% !important;
+ 	}
   }
   
 
